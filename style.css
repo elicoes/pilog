@@ -1,9 +1,18 @@
 html, body {
-	margin: 0px;
-	padding: 0px;
+	margin: 0rem;
+	padding: 0rem;
 }
 
 #menu {
-	margin: 20px;
+	position: absolute;
+	top: 0rem;
+	padding: 0.5rem;
 	background-color: blue;
+}
+
+#bottom {
+	position: absolute;
+	bottom: 0rem;
+	padding: 0.5rem;
+	background-color: black;
 }
