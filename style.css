@@ -8,6 +8,7 @@ html, body {
 	top: 0rem;
 	padding: 0.5rem;
 	background-color: blue;
+	display: inline-flex;
 }
 
 #bottom {
@@ -16,9 +17,6 @@ html, body {
 	padding: 0.5rem;
 	background-color: black;
 	display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: center;
 }
 
 .but{
