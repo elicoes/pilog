@@ -1,3 +1,9 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
 #menu {
+	margin: 20px;
 	background-color: blue;
 }
