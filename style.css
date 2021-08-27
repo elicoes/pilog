@@ -46,6 +46,8 @@ html, body {
 }
 
 .psi{
+	font-family: 'Righteous', cursive;
+	font-size: 3rem;
 	margin-left: 1rem;
 	margin-right: 1rem;
 	text-align: center;
@@ -54,6 +56,8 @@ html, body {
 }
 
 .i{
+	font-family: 'Righteous', cursive;
+	font-size: 3rem;
 	margin-left: 1rem;
 	margin-right: 1rem;
 	text-align: center;
@@ -62,6 +66,8 @@ html, body {
 }
 
 .logope{
+	font-family: 'Righteous', cursive;
+	font-size: 3rem;
 	margin-left: 1rem;
 	margin-right: 1rem;
 	text-align: center;
