@@ -6,10 +6,11 @@ html, body {
 #menu {
 	position: absolute;
 	width: 100%;
-	top: 0rem;
-	padding: 0.5rem;
 	background-color: blue;
 	display: inline-flex;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+    justify-content: center;
 }
 
 #bottom {
