@@ -1,13 +1,16 @@
 html, body {
 	margin: 0rem;
 	padding: 0rem;
-	width: 60rem
+}
+
+#page {
+	width: 30rem;
 }
 
 #title {
-	margin-top: 1rem;
-	position: fixed;
-	height: 4rem;
+	margin-top: 1%;
+	position: absolute;
+	height: 9%;
 	left: 50%;
     transform: translate(-50%, 0);
 }
@@ -21,8 +24,8 @@ html, body {
 }
 
 #menu {
-	position: fixed;
-	width: 100%;
+	position: absolute;
+	min-width: 100%;
 	background-color: blue;
 	display: inline-flex;
 	padding-bottom: 0.5rem;
@@ -31,24 +34,25 @@ html, body {
 }
 
 #content {
-	top: 5rem;
-    bottom: 10rem;
-    position: fixed;
-    width: 100%;
+	top: 10%;
+    bottom: 30%;
+    position: absolute;
+    min-width: 100%;
 }
 
 #pil {
-	height: 3.5rem;
-    bottom: 6rem;
-    position: fixed;
+	height: 10%;
+    bottom: 20%;
+    position: absolute;
 	display: inline-flex;
 	justify-content: center;
-    width: 100%;
+    min-width: 100%;
 }
 
 .psi{
 	font-family: 'Righteous', cursive;
-	font-size: 3rem;
+	height: 100%
+	font-size: 80%;
 	margin-left: 0.25rem;
 	margin-right: 0.25rem;
 	text-align: center;
@@ -58,7 +62,8 @@ html, body {
 
 .i{
 	font-family: 'Righteous', cursive;
-	font-size: 3rem;
+	height: 100%
+	font-size: 80%;
 	margin-left: 0.25rem;
 	margin-right: 0.25rem;
 	text-align: center;
@@ -68,7 +73,8 @@ html, body {
 
 .logope{
 	font-family: 'Righteous', cursive;
-	font-size: 3rem;
+	height: 100%
+	font-size: 80%;
 	margin-left: 0.25rem;
 	margin-right: 0.25rem;
 	text-align: center;
@@ -77,10 +83,10 @@ html, body {
 }
 
 #bottom {
-	height: 2.5rem;
-    bottom: 0.5rem;
+	min-width: 100%;
+	top: 80%;
+    height: 20%;
     position: fixed;
-    width: 100%;
 }
 
 .but{
