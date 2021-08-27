@@ -24,4 +24,5 @@ html, body {
 	margin-right: 1rem;
 	text-align: center;
 	color: white;
+	white-space: nowrap;
 }
