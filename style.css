@@ -6,17 +6,17 @@ html, body {
 #title {
 	margin-top: 1rem;
 	position: fixed;
-	height: 3rem;
+	height: 4rem;
 	left: 50%;
     transform: translate(-50%, 0);
 }
 
 #logo {
-	margin-top: 1rem;
-	position: fixed;
-	width: 7rem;
-	left: 50%;
-    transform: translate(-50%, 0);
+	position: relative;
+    height: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #menu {
@@ -30,11 +30,43 @@ html, body {
 }
 
 #content {
-	position: fixed;
-	width: 100%;
-	padding-bottom: 10rem;
-	padding-top: 4rem;
-    justify-content: center;
+	top: 5rem;
+    bottom: 10rem;
+    position: fixed;
+    width: 100%;
+}
+
+#pil {
+	height: 3.5rem;
+    bottom: 6rem;
+    position: fixed;
+	display: inline-flex;
+	justify-content: center;
+    width: 100%;
+}
+
+.psi{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	text-align: center;
+	color: black;
+	white-space: nowrap;
+}
+
+.i{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	text-align: center;
+	color: #969696ff;
+	white-space: nowrap;
+}
+
+.logope{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	text-align: center;
+	color: #0064ffff;
+	white-space: nowrap;
 }
 
 #bottom {
