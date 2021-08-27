@@ -48,8 +48,8 @@ html, body {
 .psi{
 	font-family: 'Righteous', cursive;
 	font-size: 3rem;
-	margin-left: 1rem;
-	margin-right: 1rem;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
 	text-align: center;
 	color: black;
 	white-space: nowrap;
@@ -58,8 +58,8 @@ html, body {
 .i{
 	font-family: 'Righteous', cursive;
 	font-size: 3rem;
-	margin-left: 1rem;
-	margin-right: 1rem;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
 	text-align: center;
 	color: #969696ff;
 	white-space: nowrap;
@@ -68,8 +68,8 @@ html, body {
 .logope{
 	font-family: 'Righteous', cursive;
 	font-size: 3rem;
-	margin-left: 1rem;
-	margin-right: 1rem;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
 	text-align: center;
 	color: #0064ffff;
 	white-space: nowrap;
