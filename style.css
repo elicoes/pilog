@@ -46,7 +46,6 @@ html, body {
 	
 	#pil {
 		position: relative;
-		padding-bottom: 8rem;
 		left: 50%;
 		transform: translate(-50%, 0);
 		text-align: center;
