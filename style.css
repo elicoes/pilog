@@ -55,6 +55,8 @@ html, body {
 
 #button{
 	background-color: Transparent;
+	border: none;
+	color: black;
 }
 
 #pil {
