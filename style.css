@@ -13,6 +13,7 @@ html, body {
 	height: 9%;
 	left: 50%;
     transform: translate(-50%, 0);
+	width: 100%
 }
 
 #logo {
@@ -36,6 +37,10 @@ html, body {
     bottom: 30%;
     position: absolute;
     min-width: 100%;
+}
+
+#button{
+	background-color: Transparent;
 }
 
 #pil {
