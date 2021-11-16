@@ -41,8 +41,6 @@ html, body {
 
 #menu {
 	margin-top: 4.5rem;
-	margin-left: 0rem;
-	margin-right: 0rem;
 	position: fixed;
 	height: 2rem;
 	left: 50%;
@@ -76,12 +74,12 @@ html, body {
 }
 
 #pil {
+	position: fixed;
 	height: 2rem;
-    bottom: 6.5rem;
-    position: absolute;
-	display: inline-flex;
-	justify-content: center;
-    min-width: 100%;
+	bottom: 6.5rem;
+	left: 50%;
+    transform: translate(-50%, 0);
+	text-align: center;
 }
 
 .psi{
