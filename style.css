@@ -5,7 +5,7 @@ html, body {
 }
 
 #page {
-	width: 30rem;
+	width: 100%;
 }
 
 /*Mas pequeño que 35rem de height*/
@@ -98,15 +98,17 @@ html, body {
 	}
 	
 	#content {
-		padding-top: 6rem;
-		padding-bottom: 9rem;
-		min-height: calc(100% - 15rem);
+		padding-top: 7rem;
+		padding-bottom: 10rem;
+		min-height: calc(100% - 17rem);
 		min-width: 100%;
 		z-index: 1;
 		position: absolute;
-		display: flex;
+		display: inline-flex;
 		justify-content: center;
 		align-items: center;
+		align-content: space-between;
+		flex-direction: column;
 	}
 	
 	#pil {
@@ -163,15 +165,20 @@ html, body {
 	.br1{
 		display: none;
 	}
+	
+	#menu {
+		height: 3rem !important;
+	}
 }
 @media not all and (max-width: 300px){
 	.br2{
 		display: none;
 	}
+	
+	#menu {
+		height: 4rem !important;
+	}
 }
-
-
-
 
 #button{
 	background-color: Transparent;
