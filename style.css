@@ -52,7 +52,7 @@ html, body {
 .psi{
 	font-family: 'Righteous', cursive;
 	height: 100%
-	font-size: 80%;
+	font-size: 2rem;
 	margin-left: 0.25rem;
 	margin-right: 0.25rem;
 	text-align: center;
@@ -63,7 +63,7 @@ html, body {
 .i{
 	font-family: 'Righteous', cursive;
 	height: 100%
-	font-size: 80%;
+	font-size: 1rem;
 	margin-left: 0.25rem;
 	margin-right: 0.25rem;
 	text-align: center;
@@ -74,7 +74,7 @@ html, body {
 .logope{
 	font-family: 'Righteous', cursive;
 	height: 100%
-	font-size: 80%;
+	font-size: 2rem;
 	margin-left: 0.25rem;
 	margin-right: 0.25rem;
 	text-align: center;
