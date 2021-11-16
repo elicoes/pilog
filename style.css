@@ -42,7 +42,7 @@ html, body {
 }
 
 #menu {
-	margin-top: 4.5rem;
+	padding-top: 4.5rem;
 	position: fixed;
 	height: 2rem;
 	left: 50%;
