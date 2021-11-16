@@ -71,6 +71,16 @@ html, body {
 		display: inline-grid;
 		right: 0.3rem;
 	}
+	
+	#dirtel {
+		height: 4rem;
+		position: relative;
+		z-index: 3;
+		align-items: center;
+		text-align: center;
+		display: inline-grid;
+		right: 0.3rem;
+	}
 }
 
 /*Mas grande que 35rem de width*/
@@ -134,6 +144,17 @@ html, body {
 		left: 0.3rem;
 	}
 	
+	#dirtel {
+		bottom: 1rem;
+		height: 4rem;
+		position: fixed;
+		z-index: 3;
+		align-items: center;
+		text-align: center;
+		display: inline-grid;
+		left: 0.3rem;
+	}
+	
 	#telef {
 		bottom: 1rem;
 		height: 4rem;
@@ -151,12 +172,12 @@ html, body {
 }
 
 @media all and (max-width: 699px){
-	.i{
+	.i, #telf, #directions{
 		display: none;
 	}
 }
 @media all and (min-width: 700px){
-	.brI{
+	.brI, #dirtel{
 		display: none;
 	}
 }
