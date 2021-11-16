@@ -227,6 +227,10 @@ html, body {
 	}
 	
 	#dirtel2{
+		font-size: 0.8rem;
+	}
+	
+	#dirtel2{
 		display: inherit !important;
 		height: 5rem !important;
 	}
