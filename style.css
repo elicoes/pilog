@@ -63,8 +63,8 @@ html, body {
 
 
 #content {
-	top: 7rem;
-    bottom: 5rem;
+	top: 6rem;
+    bottom: 10rem;
     position: absolute;
     min-width: 100%;
 }
@@ -76,8 +76,8 @@ html, body {
 }
 
 #pil {
-	height: 20%;
-    bottom: 20%;
+	height: 2rem;
+    bottom: 6.5rem;
     position: absolute;
 	display: inline-flex;
 	justify-content: center;
