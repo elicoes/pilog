@@ -41,7 +41,7 @@ html, body {
 }
 
 #pil {
-	height: 10%;
+	height: 20%;
     bottom: 20%;
     position: absolute;
 	display: inline-flex;
