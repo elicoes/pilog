@@ -75,8 +75,8 @@ html, body {
 
 #pil {
 	position: fixed;
-	height: 2rem;
-	bottom: 6.5rem;
+	height: 2.5rem;
+	bottom: 7rem;
 	left: 50%;
     transform: translate(-50%, 0);
 	text-align: center;
@@ -85,32 +85,23 @@ html, body {
 .psi{
 	font-family: 'Righteous', cursive;
 	font-size: 2rem;
-	margin-left: 0.25rem;
-	margin-right: 0.25rem;
 	text-align: center;
 	color: black;
-	white-space: nowrap;
 }
 
 .i{
 	font-family: 'Righteous', cursive;
 	font-size: 1rem;
-	margin-left: 0.25rem;
-	margin-right: 0.25rem;
 	text-align: center;
 	color: #969696ff;
-	white-space: nowrap;
 }
 
 .logope{
 	font-family: 'Righteous', cursive;
 
 	font-size: 2rem;
-	margin-left: 0.25rem;
-	margin-right: 0.25rem;
 	text-align: center;
 	color: #0064ffff;
-	white-space: nowrap;
 }
 
 #bottom {
