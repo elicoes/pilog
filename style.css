@@ -9,7 +9,7 @@ html, body {
 }
 
 /*Mas pequeño que 35rem de height*/
-@media all and (max-height: 65rem) { 
+@media all and (max-height: 50rem) { 
 	#title {
 		margin-top: 1rem;
 		position: absolute;
@@ -22,7 +22,7 @@ html, body {
 }
 
 /*Mas grande que 35rem de width*/
-@media not all and (max-height: 65rem) {
+@media not all and (max-height: 50rem) {
 	#title {
 		margin-top: 1rem;
 		position: fixed;
