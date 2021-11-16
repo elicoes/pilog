@@ -176,6 +176,10 @@ html, body {
 	#menu {
 		height: 3rem !important;
 	}
+	
+	#content {
+		padding-top: 8rem  !important;
+	}
 }
 @media all and (max-width: 300px){
 	.br2{
@@ -184,6 +188,10 @@ html, body {
 	
 	#menu {
 		height: 4rem !important;
+	}
+	
+	#content {
+		padding-top: 9rem !important;
 	}
 }
 
