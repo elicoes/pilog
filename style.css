@@ -37,9 +37,11 @@ html, body {
 		min-width: 100%;
 		z-index: 1;
 		position: relative;
-		display: flex;
+		display: inline-flex;
 		justify-content: center;
 		align-items: center;
+		align-content: space-between;
+		flex-direction: column;
 	}
 	
 	#pil {
