@@ -161,18 +161,25 @@ html, body {
 	}
 }
 
-@media not all and (max-width: 500px){
+.br2{
+	display: none;
+}
+
+.br1{
+	display: none;
+}
+@media all and (max-width: 500px){
 	.br1{
-		display: none;
+		display: inherit !important;
 	}
 	
 	#menu {
 		height: 3rem !important;
 	}
 }
-@media not all and (max-width: 300px){
+@media all and (max-width: 300px){
 	.br2{
-		display: none;
+		display: inherit !important;
 	}
 	
 	#menu {
