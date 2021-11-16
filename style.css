@@ -200,7 +200,7 @@ html, body {
 .br1{
 	display: none;
 }
-@media all and (max-width: 500px){
+@media all and (max-width: 525px){
 	.br1{
 		display: inherit !important;
 	}
@@ -214,7 +214,7 @@ html, body {
 	}
 }
 
-@media all and (max-width: 400px){
+@media all and (max-width: 425px){
 	.br1{
 		display: inherit !important;
 	}
@@ -241,31 +241,27 @@ html, body {
 	}
 }
 
-@media all and (max-width: 500px) and (min-height: 50rem){
+@media all and (max-width: 525px) and (min-height: 50rem){
 	#content {
 		padding-top: 8rem  !important;
 		min-height: calc(100% - 18rem) !important;
 	}
 }
 
-@media all and (max-width: 300px) and (min-height: 50rem){
+@media all and (max-width: 325px) and (min-height: 50rem){
 	#content {
 		padding-top: 10rem  !important;
 		min-height: calc(100% - 20rem) !important;
 	}
 }
 
-@media all and (max-width: 300px){
+@media all and (max-width: 325px){
 	.br2{
 		display: inherit !important;
 	}
 	
 	#menu {
 		height: 5rem !important;
-	}
-	
-	#dirtel{
-		font-size: 0.7rem;
 	}
 }
 
