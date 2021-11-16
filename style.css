@@ -198,23 +198,19 @@ html, body {
 	.br1{
 		display: inherit !important;
 	}
-}
-
-@media all and (max-width: 500px) and (min-height: 50rem){
+	
 	#menu {
 		height: 3rem !important;
 	}
-	
+}
+
+@media all and (max-width: 500px) and (min-height: 50rem){
 	#content {
 		padding-top: 8rem  !important;
 	}
 }
 
 @media all and (max-width: 300px) and (min-height: 50rem){
-	#menu {
-		height: 4rem !important;
-	}
-	
 	#content {
 		padding-top: 9rem  !important;
 	}
@@ -223,6 +219,10 @@ html, body {
 @media all and (max-width: 300px){
 	.br2{
 		display: inherit !important;
+	}
+	
+	#menu {
+		height: 4rem !important;
 	}
 }
 
