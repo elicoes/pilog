@@ -33,7 +33,7 @@ html, body {
 
 #logo {
 	position: relative;
-    height: 70%;
+    height: 20rem;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
