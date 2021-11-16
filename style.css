@@ -226,6 +226,10 @@ html, body {
 		font-size: 1.5rem;
 	}
 	
+	#dirtel{
+		display: none;
+	}
+	
 	#dirtel2{
 		font-size: 0.8rem;
 	}
