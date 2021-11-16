@@ -48,6 +48,18 @@ html, body {
 	height: 2rem;
 	left: 50%;
     transform: translate(-50%, 0);
+	text-align: center;
+}
+
+@media not all and (max-width: 500px){
+	.br1{
+		display: none;
+	}
+}
+@media not all and (max-width: 300px){
+	.br2{
+		display: none;
+	}
 }
 
 #content {
