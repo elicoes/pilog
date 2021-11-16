@@ -7,8 +7,8 @@ html, body {
 	width: 30rem;
 }
 
-/*Mas pequeño que 700 de width*/
-@media all and (max-width: 700px) { 
+/*Mas pequeño que 35rem de height*/
+@media all and (max-height: 35rem) { 
 	#title {
 		margin-top: 1rem;
 		position: fixed;
@@ -19,7 +19,7 @@ html, body {
 	}
 }
 
-/*Mas grande que 700 de width*/
+/*Mas grande que 35rem de width*/
 @media not all and (max-width: 700px) {
 	#title {
 		margin-top: 1rem;
@@ -72,10 +72,8 @@ html, body {
 
 
 #content {
-	top: 6rem;
-    bottom: 10rem;
-    position: absolute;
-    min-width: 100%;
+	margin-top: 7rem;
+	margin-bottom: 10rem;
 }
 
 #button{
