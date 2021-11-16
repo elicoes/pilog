@@ -34,11 +34,7 @@ html, body {
 }
 
 #logo {
-	position: relative;
     height: 20rem;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, 0%);
 }
 
 #menu {
@@ -77,12 +73,15 @@ html, body {
 
 
 #content {
-	padding-top: 7rem;
-    min-height: 100%;
-    margin-bottom: 10rem;
-    position: absolute;
+    padding-top: 6rem;
+    padding-bottom: 9rem;
+    min-height: calc(100% - 15rem);
     min-width: 100%;
-	z-index: 1;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #button{
@@ -93,11 +92,15 @@ html, body {
 
 #pil {
 	position: fixed;
-	height: 2.5rem;
-	bottom: 7rem;
-	left: 50%;
+    height: 2rem;
+    bottom: 0;
+    padding-bottom: 8rem;
+    left: 50%;
     transform: translate(-50%, 0);
-	text-align: center;
+    text-align: center;
+    background-color: white;
+    z-index: 2;
+    width: 100%;
 }
 
 .psi{
@@ -116,23 +119,28 @@ html, body {
 
 .logope{
 	font-family: 'Righteous', cursive;
-
 	font-size: 2rem;
 	text-align: center;
 	color: #0064ffff;
 }
 
-#bottom {
-	min-width: 100%;
-	top: 80%;
-    height: 20%;
+#directions {
+	bottom: 1rem;
+    height: 6rem;
     position: fixed;
+    z-index: 3;
+    align-items: center;
+    display: inline-grid;
+	left: 0.3rem;
 }
 
-.but{
-	margin-left: 1rem;
-	margin-right: 1rem;
-	text-align: center;
-	color: white;
-	white-space: nowrap;
+#telef {
+	bottom: 1rem;
+    height: 6rem;
+    position: fixed;
+    z-index: 3;
+    align-items: center;
+	text-align: right;
+    display: inline-grid;
+	right: 0.3rem;
 }
