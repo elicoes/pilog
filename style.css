@@ -134,6 +134,11 @@ html, body {
 	left: 0.3rem;
 }
 
+p{
+	margin-top: 0.1rem;
+	margin-bottom: 0.2rem;
+}
+
 #telef {
 	bottom: 1rem;
     height: 6rem;
