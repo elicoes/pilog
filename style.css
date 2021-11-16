@@ -211,6 +211,14 @@ html, body {
 	#dirtel{
 		font-size: 0.8rem;
 	}
+	
+	.psi, .logope {
+		font-size: 1.5rem;
+	}
+	
+	#dirtel2{
+		display: inherit !important;
+	}
 }
 
 @media all and (max-width: 400px){
@@ -225,14 +233,6 @@ html, body {
 	#dirtel{
 		display: none !important;
 		height: 5rem !important;
-	}
-	
-	.psi, .logope {
-		font-size: 1.5rem;
-	}
-	
-	#dirtel2{
-		display: inherit !important;
 	}
 }
 
