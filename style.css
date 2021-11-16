@@ -48,7 +48,7 @@ html, body {
 	text-align: center;
 }
 
-@media all and (max-width: 700px){
+@media all and (max-width: 699px){
 	.i{
 		display: none;
 	}
