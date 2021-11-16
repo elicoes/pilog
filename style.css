@@ -48,6 +48,12 @@ html, body {
 	text-align: center;
 }
 
+@media all and (min-width: 500px){
+	.i{
+		display: none;
+	}
+}
+
 @media not all and (max-width: 500px){
 	.br1{
 		display: none;
