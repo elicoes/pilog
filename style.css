@@ -172,13 +172,13 @@ html, body {
 }
 
 @media all and (max-width: 699px){
-	.i, #telf, #directions{
-		display: none;
+	.i, #telef, #directions{
+		display: none !important;
 	}
 }
 @media all and (min-width: 700px){
 	.brI, #dirtel{
-		display: none;
+		display: none !important;
 	}
 }
 
