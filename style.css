@@ -31,7 +31,6 @@ html, body {
 	}
 }
 
-
 #logo {
 	position: relative;
     height: 70%;
@@ -62,9 +61,10 @@ html, body {
 	}
 }
 
+
 #content {
-	top: 10%;
-    bottom: 30%;
+	top: 7rem;
+    bottom: 5rem;
     position: absolute;
     min-width: 100%;
 }
