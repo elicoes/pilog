@@ -176,7 +176,7 @@ html, body {
     height: 20rem;
 }
 
-@media all and (max-width: 699px){
+@media all and (max-width: 699.99px){
 	.i, #telef, #directions{
 		display: none !important;
 	}
