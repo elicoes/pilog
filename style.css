@@ -24,13 +24,11 @@ html, body {
 }
 
 #menu {
+	margin-top: 10%;
 	position: absolute;
-	min-width: 100%;
-	background-color: blue;
-	display: inline-flex;
-	padding-bottom: 0.5rem;
-	padding-top: 0.5rem;
-    justify-content: center;
+	height: 4%;
+	left: 50%;
+    transform: translate(-50%, 0);
 }
 
 #content {
