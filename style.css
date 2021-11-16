@@ -61,7 +61,6 @@ html, body {
 		align-items: center;
 		display: inline-grid;
 		left: 0.3rem;
-		width: 100%;
 	}
 	
 	#telef {
@@ -73,6 +72,7 @@ html, body {
 		display: inline-grid;
 		right: 0.3rem;
 		width: 100%;
+		transform: translateY(-4rem);
 	}
 	
 	#dirtel {
