@@ -173,8 +173,8 @@ html, body {
 }
 
 #logo {
-    max-height: 20rem;
-	max-width: 100%;
+    max-width: 100%;
+    height: 15rem;
 }
 
 @media all and (max-width: 699.99px){
@@ -212,12 +212,14 @@ html, body {
 @media all and (max-width: 500px) and (min-height: 50rem){
 	#content {
 		padding-top: 8rem  !important;
+		min-height: calc(100% - 18rem) !important;
 	}
 }
 
 @media all and (max-width: 300px) and (min-height: 50rem){
 	#content {
 		padding-top: 10rem  !important;
+		min-height: calc(100% - 20rem) !important;
 	}
 }
 
