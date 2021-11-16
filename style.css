@@ -75,7 +75,7 @@ html, body {
 		transform: translateY(-4rem);
 	}
 	
-	#dirtel {
+	#dirtel, #dirtel2 {
 		height: 4rem;
 		position: relative;
 		z-index: 3;
@@ -148,7 +148,7 @@ html, body {
 		width: 100%;
 	}
 	
-	#dirtel {
+	#dirtel, #dirtel2 {
 		bottom: 1rem;
 		height: 4rem;
 		position: fixed;
@@ -170,6 +170,10 @@ html, body {
 		right: 0.3rem;
 		width: 100%;
 	}
+}
+
+#dirtel2 {
+	display: none;
 }
 
 #logo {
@@ -205,7 +209,30 @@ html, body {
 	}
 	
 	#dirtel{
-		font-size: 0.85rem;
+		font-size: 0.8rem;
+	}
+}
+
+@media all and (max-width: 400px){
+	.br1{
+		display: inherit !important;
+	}
+	
+	#menu {
+		height: 3rem !important;
+	}
+	
+	#dirtel{
+		display: none !important;
+		height: 5rem !important;
+	}
+	
+	.psi, .logope {
+		font-size: 1.5rem;
+	}
+	
+	#dirtel2{
+		display: inherit !important;
 	}
 }
 
