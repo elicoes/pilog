@@ -202,6 +202,10 @@ html, body {
 	#menu {
 		height: 3rem !important;
 	}
+	
+	#directions{
+		font-size: 0.85rem;
+	}
 }
 
 @media all and (max-width: 500px) and (min-height: 50rem){
@@ -223,6 +227,10 @@ html, body {
 	
 	#menu {
 		height: 5rem !important;
+	}
+	
+	#directions{
+		font-size: 0.7rem;
 	}
 }
 
