@@ -10,7 +10,7 @@ html, body {
 #title {
 	margin-top: 1%;
 	position: absolute;
-	height: 5rem;
+	height: 9%;
 	left: 50%;
     transform: translate(-50%, 0);
 }
@@ -71,6 +71,7 @@ html, body {
 
 .logope{
 	font-family: 'Righteous', cursive;
+
 	font-size: 2rem;
 	margin-left: 0.25rem;
 	margin-right: 0.25rem;
