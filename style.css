@@ -20,7 +20,7 @@ html, body {
 }
 
 /*Mas grande que 35rem de width*/
-@media not all and (max-width: 700px) {
+@media not all and (max-height: 35rem) {
 	#title {
 		margin-top: 1rem;
 		position: absolute;
