@@ -11,7 +11,7 @@ html, body {
 @media all and (max-height: 35rem) { 
 	#title {
 		margin-top: 1rem;
-		position: fixed;
+		position: absolute;
 		height: 3rem;
 		left: 50%;
 		transform: translate(-50%, 0);
@@ -24,7 +24,7 @@ html, body {
 @media not all and (max-height: 35rem) {
 	#title {
 		margin-top: 1rem;
-		position: absolute;
+		position: fixed;
 		height: 3rem;
 		left: 50%;
 		transform: translate(-50%, 0);
