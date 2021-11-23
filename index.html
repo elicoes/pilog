@@ -16,7 +16,7 @@
 		<img id="title" src="tittle.svg">
 		
 		<div id="menu">
-			<input id="button" type="button" value="Qui som?">
+			<input id="button" type="button" value="Qui som?" v-on:click="qui">
 			<br class="br2">
 			<input id="button" type="button" value="Equip">
 			<br class="br1">
@@ -25,8 +25,17 @@
 			<input id="button" type="button" value="Tarifes">
 		</div>
 		
-		<div v-show="show=='initial2'" id="content">
+		<div v-show="show=='initial'" id="content">
 			<img id="logo" src="logo.svg">
+		</div>
+		
+		<div v-show="show=='qui'" id="content">
+			<p>Som un centre multidisciplinari de psicologia i logopèdia.</p>
+			<p>Sabem que cada pacient és un mon i oferim un tractament personalitzat a cada un d’ells per aconseguir els objectius establerts.</p>
+			<p>Fem ús de tècniques innovadores i de més clàssiques per aconseguir arribar als objectius el més aviat possible i de la manera més amena possible.</p> 
+			<p>El nostre lema és que un pacient content i motivat aconsegueix els objectius abans i amb menys esforç.</p>
+			<p>No ho dubtis, si ens necessites estarem per tu. Truca’ns, t’hi esperem.</p>
+
 		</div>
 		
 		<div id="pil">
@@ -76,10 +85,19 @@
   gtag('config', 'UA-213586676-1');
   
   var vue = new Vue({
-  el: '#page',
-  data: {
-    show: 'initial'
-  }});
+	el: '#page',
+	data: {
+		show: 'initial'
+	},
+	methods: {
+		qui: function () {
+			if (this.show == 'qui')
+				this.show = 'initial';
+			else
+				this.show = 'qui';
+		}
+	}	
+  });
 
 </script>
 
