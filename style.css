@@ -197,12 +197,12 @@ html, body {
 #logo {
     max-width: 100%;
     height: auto;
-    width: 16rem;
+    width: 10rem;
 }
 
 @media all and (max-height: 40rem){
 	#logo {
-		width: 10rem !important;
+		width: 16rem !important;
 	}
 }
 
