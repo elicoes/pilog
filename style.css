@@ -27,12 +27,6 @@ html, body {
 	.brI{
 		display: none !important;
 	}
-}
-
-@media not all and (min-width: 700px){
-	.i{
-		display: none !important;
-	}
 	
 	#content {
 		padding-bottom: 8rem !important;
@@ -40,6 +34,12 @@ html, body {
 	
 	#pil {
 		padding-bottom: 6rem !important;
+	}
+}
+
+@media not all and (min-width: 700px){
+	.i{
+		display: none !important;
 	}
 }
 
