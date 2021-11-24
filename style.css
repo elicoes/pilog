@@ -21,6 +21,14 @@ a{
 	margin-top: -1.1rem;
 }
 
+#content, #menu, #uppoints, #downpoints, #pil, #dirtel, #dirtel2{
+	width: 100% !important;
+	max-width: inherit !important;
+	background-color: white !important;
+	left: 50% !important;
+    transform: translate(-50%, 0) !important;
+}
+
 @media all and (max-width: 525px) and (min-height: 40rem){
 	#content {
 		padding-top: 8rem  !important;
