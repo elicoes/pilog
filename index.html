@@ -92,15 +92,15 @@
 			if (this.show == 'qui'){
 				this.show = 'initial';
 				this.quib = 'button';
-				this.handleResize();
 			}
 			else{
+				this.handleResize();
 				this.show = 'qui';
 				this.quib = 'buttonOK';
 			}
 		},
 		handleResize: function () {
-			console.log(window.innerHeight);
+			console.log("-> " + window.innerHeight);
 			if (this.show == 'qui' && this.$refs.refqui.clientHeight < window.innerHeight){
 				console.log("Scroll");
 			}
