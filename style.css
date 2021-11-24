@@ -36,15 +36,15 @@ html, body {
 	#pil {
 		padding-bottom: 6rem !important;
 	}
-	
-	#logo {
-		width: 10rem !important;
-	}
 }
 
 @media not all and (min-width: 700px){
 	.i{
 		display: none !important;
+	}
+	
+	#logo {
+		width: 10rem !important;
 	}
 }
 
@@ -125,6 +125,10 @@ html, body {
 		display: inline-grid;
 		width: 100%;
 	}
+	
+	#logo {
+		width: 16rem !important;
+	}
 }
 
 /*Mas grande que 35rem de width*/
@@ -197,13 +201,7 @@ html, body {
 #logo {
     max-width: 100%;
     height: auto;
-    width: 10rem;
-}
-
-@media all and (max-height: 40rem){
-	#logo {
-		width: 16rem !important;
-	}
+    width: 16rem;
 }
 
 #picture {
