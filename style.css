@@ -55,14 +55,12 @@ html, body {
 
 #dirtel, #dirtel2 {
 	border-color: #0064ff !important;
-	border-top: double;
     border-bottom: solid;
     border-width: thick;
 }
 
 #menu {
 	border-color: #0064ff !important;
-	border-bottom: double;
 	border-top: solid;
     border-width: thick;
 }
