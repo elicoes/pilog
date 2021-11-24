@@ -9,14 +9,14 @@ html, body {
 	font-family: 'Squada One';
 }
 
-@media all and (max-width: 525px) and (min-height: 45rem){
+@media all and (max-width: 525px) and (min-height: 40rem){
 	#content {
 		padding-top: 8rem  !important;
 		min-height: calc(100% - 18rem) !important;
 	}
 }
 
-@media all and (max-width: 325px) and (min-height: 45rem){
+@media all and (max-width: 325px) and (min-height: 40rem){
 	#content {
 		padding-top: 10rem  !important;
 		min-height: calc(100% - 20rem) !important;
@@ -64,7 +64,7 @@ html, body {
 }
 
 /*Mas pequeño que 35rem de height*/
-@media all and (max-height: 45rem) { 
+@media all and (max-height: 40rem) { 
 	#title {
 		margin-top: 1rem;
 		position: absolute;
@@ -123,7 +123,7 @@ html, body {
 }
 
 /*Mas grande que 35rem de width*/
-@media not all and (max-height: 45rem) {
+@media not all and (max-height: 40rem) {
 	#title {
 		margin-top: 1rem;
 		position: fixed;
