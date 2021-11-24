@@ -13,6 +13,10 @@ html, body {
 	margin-top: -0.5rem;
 }
 
+#dwp {
+	margin-top: -1.1rem;
+}
+
 @media all and (max-width: 525px) and (min-height: 40rem){
 	#content {
 		padding-top: 8rem  !important;
@@ -120,7 +124,7 @@ html, body {
 		flex-direction: column;
 	}
 	
-	#uppoints, #upp, #downpoints {
+	#uppoints, #upp, #downpoints, #dwp {
 		height: 0rem !important;
 	}
 	
