@@ -9,6 +9,20 @@ html, body {
 	font-family: 'Squada One';
 }
 
+@media all and (max-width: 525px) and (min-height: 50rem){
+	#content {
+		padding-top: 8rem  !important;
+		min-height: calc(100% - 18rem) !important;
+	}
+}
+
+@media all and (max-width: 325px) and (min-height: 50rem){
+	#content {
+		padding-top: 10rem  !important;
+		min-height: calc(100% - 20rem) !important;
+	}
+}
+
 #telef, #directions, #dirtel, #dirtel2 {
 	padding: 0.2rem;
 	font-size: 0.8rem;
@@ -53,7 +67,7 @@ html, body {
 	}
 	
 	#content {
-		padding-top: 0.2rem;
+		padding-top: 0.2rem !important;
 		padding-bottom: 0.2rem;
 		min-height: calc(100%);
 		min-width: 100%;
@@ -259,20 +273,6 @@ html, body {
 	#dirtel2{
 		display: inherit !important;
 		height: 5rem !important;
-	}
-}
-
-@media all and (max-width: 525px) and (min-height: 50rem){
-	#content {
-		padding-top: 8rem  !important;
-		min-height: calc(100% - 18rem) !important;
-	}
-}
-
-@media all and (max-width: 325px) and (min-height: 50rem){
-	#content {
-		padding-top: 10rem  !important;
-		min-height: calc(100% - 20rem) !important;
 	}
 }
 
