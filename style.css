@@ -31,7 +31,7 @@ html, body {
 	}
 	
 	#uppoints {
-		top: 9rem !important;
+		top: 10rem !important;
 	}
 }
 
@@ -47,6 +47,10 @@ html, body {
 	
 	#pil {
 		padding-bottom: 6rem !important;
+	}
+	
+	#downpoints{
+		bottom: 8rem !important;
 	}
 }
 
@@ -116,7 +120,7 @@ html, body {
 		flex-direction: column;
 	}
 	
-	#uppoints, #upp {
+	#uppoints, #upp, #downpoints {
 		height: 0rem !important;
 	}
 	
@@ -188,6 +192,17 @@ html, body {
 		position: fixed;
 		width: 100%;
 		top: 6rem;
+		font-size: 2rem;
+		height: 1.5rem;
+		background-color: #ffffffeb;
+		z-index: 5;
+		text-align: center;
+	}
+	
+	#downpoints{
+		bottom: 10rem;
+		position: fixed;
+		width: 100%;
 		font-size: 2rem;
 		height: 1.5rem;
 		background-color: #ffffffeb;

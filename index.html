@@ -25,7 +25,7 @@
 			<br class="br2">
 			<input id="button" type="button" value="Tarifes">
 		</div>
-		<div v-show="upcontinue" id="uppoints"><p id="upp">...</p></div>
+		<div v-show="upcontinue==true" id="uppoints"><p id="upp">...</p></div>
 		<div v-show="show=='initial'" id="content">
 			<img id="logo" src="logo.svg">
 		</div>
@@ -38,7 +38,7 @@
 			<p id="content-text">El nostre lema és que un pacient content i motivat aconsegueix els objectius abans i amb menys esforç.</p>
 			<p id="content-text">No ho dubtis, si ens necessites estarem per tu. Truca’ns, t’hi esperem.</p>
 		</div>
-		<!--div v-show="downcontinue"><p>...</p></div-->
+		<div v-show="downcontinue==true" id="downpoints"><p id="dwp">...</p></div>
 		<div id="pil">
 			<span class="psi"> Psicologia </span>
 			<span class="i"> - </span>
