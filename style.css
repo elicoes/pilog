@@ -23,6 +23,26 @@ html, body {
 	}
 }
 
+@media all and (min-width: 700px){
+	.brI{
+		display: none !important;
+	}
+}
+
+@media not all and (min-width: 700px){
+	.i{
+		display: none !important;
+	}
+	
+	#content {
+		padding-bottom: 8rem !important;
+	}
+	
+	#pil {
+		padding-bottom: 6rem !important;
+	}
+}
+
 #dirtel, #dirtel2 {
 	padding: 0.2rem;
 	font-size: 0.8rem;
@@ -68,7 +88,7 @@ html, body {
 	
 	#content {
 		padding-top: 0.2rem !important;
-		padding-bottom: 0.2rem;
+		padding-bottom: 0.2rem !important;
 		min-height: calc(100%);
 		min-width: 100%;
 		z-index: 1;
@@ -178,18 +198,6 @@ html, body {
     max-width: 100%;
     height: auto;
     width: 16rem;
-}
-
-@media all and (min-width: 700px){
-	.brI{
-		display: none !important;
-	}
-}
-
-@media not all and (min-width: 700px){
-	.i{
-		display: none !important;
-	}
 }
 
 .br2{
