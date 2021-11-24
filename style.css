@@ -276,7 +276,7 @@ html, body {
 	}
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 400px){
 	.br1{
 		display: inherit !important;
 	}
