@@ -4,6 +4,10 @@ html, body {
 	padding: 0rem;
 }
 
+a{
+	color: #0064ff;
+}
+
 #page {
 	width: 100%;
 	font-family: 'Squada One';
