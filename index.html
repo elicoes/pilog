@@ -100,9 +100,14 @@
 			}
 		},
 		handleResize: function () {
-			console.log("<->");
+			console.log("</%>");
 			if (this.show == 'qui'){
 				console.log(window.pageYOffset + " == " + (this.$refs.refqui.clientHeight - window.innerHeight));
+				var scrollPos = window.scrollY;
+				var winHeight = window.innerHeight;
+				var docHeight = document.documentElement.scrollHeight;
+				var perc = 100 * scrollPos / (docHeight - winHeight);
+				console.log(perc + "%");
 				if (this.$refs.refqui.clientHeight > window.innerHeight){
 					console.log("Scroll YES");
 				}
