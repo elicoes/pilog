@@ -79,6 +79,13 @@
 		show: 'initial',
 		quib: 'button'
 	},
+    created() {
+        window.addEventListener('resize', this.handleResize);
+        this.handleResize();
+    },
+    destroyed() {
+        window.removeEventListener('resize', this.handleResize);
+    },
 	methods: {
 		qui: function () {
 			if (this.show == 'qui'){
@@ -89,7 +96,10 @@
 				this.show = 'qui';
 				this.quib = 'buttonOK';
 			}
-		}
+		},
+		handleResize: function () {
+			console.log(window.innerWidth + " ... " + window.innerHeight);
+        }
 	}	
   });
   
