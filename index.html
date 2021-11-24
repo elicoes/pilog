@@ -25,7 +25,7 @@
 			<br class="br2">
 			<input id="button" type="button" value="Tarifes">
 		</div>
-		
+		<div v-show="upcontinue"><p>...</p></div>
 		<div v-show="show=='initial'" id="content">
 			<img id="logo" src="logo.svg">
 		</div>
@@ -37,9 +37,8 @@
 			<p id="content-text">Fem ús de tècniques innovadores i de més clàssiques per aconseguir arribar als objectius el més aviat possible i de la manera més amena possible.</p> 
 			<p id="content-text">El nostre lema és que un pacient content i motivat aconsegueix els objectius abans i amb menys esforç.</p>
 			<p id="content-text">No ho dubtis, si ens necessites estarem per tu. Truca’ns, t’hi esperem.</p>
-
 		</div>
-		
+		<div v-show="downcontinue"><p>...</p></div>
 		<div id="pil">
 			<span class="psi"> Psicologia </span>
 			<span class="i"> - </span>
@@ -77,7 +76,9 @@
 	el: '#page',
 	data: {
 		show: 'initial',
-		quib: 'button'
+		quib: 'button',
+		upcontinue: false,
+		downcontinue: false
 	},
     created() {
         window.addEventListener('resize', this.handleResize);
@@ -102,13 +103,16 @@
 		handleResize: function () {
 			console.log("</%>");
 			if (this.show == 'qui'){
-				console.log(window.pageYOffset + " == " + (this.$refs.refqui.clientHeight - window.innerHeight));
+				/*console.log(window.pageYOffset + " == " + (this.$refs.refqui.clientHeight - window.innerHeight));
 				var scrollPos = window.scrollY;
 				var winHeight = window.innerHeight;
 				var docHeight = document.documentElement.scrollHeight;
 				var perc = 100 * scrollPos / (docHeight - winHeight);
-				console.log(perc + "%");
+				console.log(perc + "%");*/
 				if (this.$refs.refqui.clientHeight > window.innerHeight){
+					var perc = 100 * window.scrollY / (this.$refs.refqui.clientHeight - window.innerHeight);
+					this.upcontinue = (perc > 0);
+					this.downcontinue = (perc < 99);
 					console.log("Scroll YES");
 				}
 				else{
