@@ -265,10 +265,6 @@ html, body {
 	}
 }
 
-p{
-	max-width: 30rem;
-}
-
 #button{
 	background-color: Transparent;
 	border: none;
@@ -298,7 +294,7 @@ p{
 }
 
 #content-text{
-	max-width: 30rem;
+	max-width: 25rem;
 	font-size: 0.7rem;
 }
 
