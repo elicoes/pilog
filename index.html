@@ -95,11 +95,12 @@
 			else{
 				this.show = 'qui';
 				this.quib = 'buttonOK';
-				this.handleResize();
+				var tis = this;
+				setTimeout(function(){ tis.handleResize() }, 300);
 			}
 		},
 		handleResize: function () {
-			console.log("<> " + window.innerHeight);
+			console.log("<-> " + window.innerHeight);
 			if (this.show == 'qui'){
 				if (this.$refs.refqui.clientHeight > window.innerHeight){
 					console.log("Scroll YES");
