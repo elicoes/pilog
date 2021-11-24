@@ -82,6 +82,7 @@
     created() {
         window.addEventListener('resize', this.handleResize);
         this.handleResize();
+		console.log('hola');
     },
     destroyed() {
         window.removeEventListener('resize', this.handleResize);
@@ -98,7 +99,7 @@
 			}
 		},
 		handleResize: function () {
-			console.log(this.$refs.refqui.clientHeight);
+			console.log(window.innerHeight);
 			if (this.show == 'qui' && this.$refs.refqui.clientHeight < window.innerHeight){
 				console.log("Scroll");
 			}
@@ -107,7 +108,7 @@
   });
   
   window.document.body.onscroll = function() {
-    console.log(123);
+    console.log(13);
 }
 
 </script>
