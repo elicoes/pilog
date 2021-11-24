@@ -131,7 +131,6 @@ a{
 		padding-top: 0.2rem !important;
 		padding-bottom: 0.2rem !important;
 		min-height: calc(100%);
-		min-width: 100%;
 		z-index: 1;
 		position: relative;
 		display: inline-flex;
@@ -199,7 +198,6 @@ a{
 		padding-top: 7rem;
 		padding-bottom: 10rem;
 		min-height: calc(100% - 17rem);
-		min-width: 100%;
 		z-index: 1;
 		position: absolute;
 		display: inline-flex;
