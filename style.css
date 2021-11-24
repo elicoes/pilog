@@ -32,8 +32,7 @@ a{
 	background-color: white !important;
 	left: 50% !important;
     transform: translate(-50%, 0) !important;
-	margin-left: 0.2rem !important;
-	margin-right: 0.2rem !important;
+	padding: 0.2rem;
 }
 
 @media all and (max-width: 525px) and (min-height: 40rem){
