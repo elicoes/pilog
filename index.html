@@ -30,7 +30,7 @@
 			<img id="logo" src="logo.svg">
 		</div>
 		
-		<div v-show="show=='qui'" id="content">
+		<div v-show="show=='qui'" id="content" ref="refqui">
 			<p id="content-text">Som un centre multidisciplinari de psicologia i logopèdia.</p>
 			<img id="picture" src="presentacio.jpg">
 			<p id="content-text">Sabem que cada pacient és un mon i oferim un tractament personalitzat a cada un d’ells per aconseguir els objectius establerts.</p>
@@ -98,7 +98,9 @@
 			}
 		},
 		handleResize: function () {
-			console.log(window.innerWidth + " ... " + window.innerHeight);
+			if (this.$refs.refqui.clientHeight < window.innerHeight){
+				console.log("Scroll");
+			}
         }
 	}	
   });
