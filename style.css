@@ -36,6 +36,10 @@ html, body {
 	#pil {
 		padding-bottom: 6rem !important;
 	}
+	
+	#logo {
+		width: 10rem !important;
+	}
 }
 
 @media not all and (min-width: 700px){
@@ -193,7 +197,13 @@ html, body {
 #logo {
     max-width: 100%;
     height: auto;
-    width: 13rem;
+    width: 16rem;
+}
+
+@media all and (max-height: 40rem){
+	#logo {
+		width: 10rem;
+	}
 }
 
 #picture {
