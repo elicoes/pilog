@@ -171,6 +171,12 @@ html, body {
 #logo {
     max-width: 100%;
     height: auto;
+    width: 13rem;
+}
+
+#picture {
+    max-width: 100%;
+    height: auto;
     width: 16rem;
 }
 
