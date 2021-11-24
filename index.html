@@ -98,6 +98,7 @@
 			}
 		},
 		handleResize: function () {
+			console.log(this.$refs.refqui.clientHeight);
 			if (this.show == 'qui' && this.$refs.refqui.clientHeight < window.innerHeight){
 				console.log("Scroll");
 			}
