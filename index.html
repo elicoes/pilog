@@ -82,10 +82,12 @@
 	},
     created() {
         window.addEventListener('resize', this.handleResize);
+		window.addEventListener('scroll', this.handleResize);
         this.handleResize();
     },
     destroyed() {
         window.removeEventListener('resize', this.handleResize);
+		window.removeEventListener('scroll', this.handleResize);
     },
 	methods: {
 		qui: function () {

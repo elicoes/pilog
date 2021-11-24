@@ -116,8 +116,8 @@ html, body {
 		flex-direction: column;
 	}
 	
-	#uppoints {
-		display: none !important;
+	#uppoints, #upp {
+		height: 0rem !important;
 	}
 	
 	#pil {
