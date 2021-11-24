@@ -295,7 +295,9 @@ html, body {
 
 #content-text{
 	max-width: 25rem;
-	font-size: 0.7rem;
+	font-size: 0.8rem;
+	text-align: center;
+    margin: 0.3rem;
 }
 
 p{
