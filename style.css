@@ -202,7 +202,7 @@ html, body {
 
 @media all and (max-height: 40rem){
 	#logo {
-		width: 10rem;
+		width: 10rem !important;
 	}
 }
 
