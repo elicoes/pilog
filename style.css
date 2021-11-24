@@ -14,8 +14,12 @@ a{
 }
 
 #page {
-	width: 30rem;
-	font-family: 'Squada One';
+	position: fixed;
+    width: 30rem;
+    height: 100%;
+    font-family: 'Squada One';
+    left: 50% !important;
+    transform: translate(-50%, 0) !important;
 }
 
 #upp {
