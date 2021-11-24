@@ -102,8 +102,14 @@
 		handleResize: function () {
 			console.log("<> " + window.innerHeight);
 			if (this.show == 'qui'){
-				console.log("Scroll: " + this.$refs.refqui.clientHeight + " > " + window.innerHeight);
+				if (this.$refs.refqui.clientHeight > window.innerHeight){
+					console.log("Scroll YES");
+				}
+				else{
+					console.log("Scroll NOT");
+				}
 			}
+			console.log("Resize");
         }
 	}	
   });
