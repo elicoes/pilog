@@ -17,7 +17,7 @@
 		<img id="title" src="tittle.svg">
 		
 		<div id="menu">
-			<input id="button" type="button" value="Qui som?" v-on:click="qui">
+			<input :id="quib" type="button" value="Qui som?" v-on:click="qui">
 			<br class="br2">
 			<input id="button" type="button" value="Equip">
 			<br class="br1">
@@ -76,14 +76,19 @@
   var vue = new Vue({
 	el: '#page',
 	data: {
-		show: 'initial'
+		show: 'initial',
+		quib: 'button'
 	},
 	methods: {
 		qui: function () {
-			if (this.show == 'qui')
+			if (this.show == 'qui'){
 				this.show = 'initial';
-			else
+				this.quib = 'button';
+			}
+			else{
 				this.show = 'qui';
+				this.quib = 'buttonOK';
+			}
 		}
 	}	
   });
