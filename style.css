@@ -34,7 +34,7 @@ html, body {
 	
 	#content {
 		min-height: calc(100%);
-		max-width: 25rem;
+		min-width: 100%;
 		z-index: 1;
 		position: relative;
 		display: inline-flex;
@@ -114,7 +114,7 @@ html, body {
 		padding-top: 7rem;
 		padding-bottom: 10rem;
 		min-height: calc(100% - 17rem);
-		max-width: 25rem;
+		min-width: 100%;
 		z-index: 1;
 		position: absolute;
 		display: inline-flex;
@@ -265,6 +265,10 @@ html, body {
 	}
 }
 
+p{
+	max-width: 30rem;
+}
+
 #button{
 	background-color: Transparent;
 	border: none;
@@ -291,6 +295,11 @@ html, body {
 	font-size: 2rem;
 	text-align: center;
 	color: #0064ffff;
+}
+
+#content-text{
+	max-width: 30rem;
+	font-size: 0.7rem;
 }
 
 p{
