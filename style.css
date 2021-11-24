@@ -30,6 +30,7 @@ html, body {
 	
 	#content {
 		padding-bottom: 8rem !important;
+		min-height: calc(100% - 15rem) !important;
 	}
 	
 	#pil {
