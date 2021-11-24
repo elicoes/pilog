@@ -12,19 +12,14 @@ html, body {
 #directions, #dirtel, #dirtel2 {
 	padding: 0.2rem;
 	font-size: 0.8rem;
-	border-color: #0064ff;
+	border-color: #0064ff !important;
 	border-top: double;
     border-bottom: solid;
     border-width: thick;
 }
 
-#title {
-	border-color: #0064ff;
-    border-top: solid;
-    border-width: thick;
-}
-
 #menu {
+	border-color: #0064ff !important;
 	border-bottom: double;
 	border-top: solid;
     border-width: thick;
