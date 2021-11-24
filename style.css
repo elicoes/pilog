@@ -63,6 +63,7 @@ html, body {
 	border-color: #0064ff !important;
 	border-top: solid;
     border-width: thick;
+	top: 0rem;
 }
 
 /*Mas pequeño que 35rem de height*/
