@@ -100,8 +100,9 @@
 			}
 		},
 		handleResize: function () {
-			console.log("<-> " + window.pageYOffset);
+			console.log("<->");
 			if (this.show == 'qui'){
+				console.log(window.pageYOffset + " == " + (this.$refs.refqui.clientHeight - window.innerHeight) 
 				if (this.$refs.refqui.clientHeight > window.innerHeight){
 					console.log("Scroll YES");
 				}
