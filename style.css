@@ -4,6 +4,11 @@ html, body {
 	padding: 0rem;
 }
 
+body {
+	background-color: #969696;
+    z-index: -10;
+}
+
 a{
 	color: #0064ff;
 }
