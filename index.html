@@ -98,19 +98,12 @@
 			else{
 				this.show = 'qui';
 				this.quib = 'buttonOK';
-				var tis = this;
-				setTimeout(function(){ tis.handleResize() }, 300);
 			}
+			var tis = this;
+			setTimeout(function(){ tis.handleResize() }, 300);
 		},
 		handleResize: function () {
-			console.log("</%>");
 			if (this.show == 'qui'){
-				/*console.log(window.pageYOffset + " == " + (this.$refs.refqui.clientHeight - window.innerHeight));
-				var scrollPos = window.scrollY;
-				var winHeight = window.innerHeight;
-				var docHeight = document.documentElement.scrollHeight;
-				var perc = 100 * scrollPos / (docHeight - winHeight);
-				console.log(perc + "%");*/
 				if (this.$refs.refqui.clientHeight > window.innerHeight){
 					var perc = 100 * window.scrollY / (this.$refs.refqui.clientHeight - window.innerHeight);
 					this.upcontinue = (perc > 0);
