@@ -2,6 +2,8 @@ html, body {
 	font-size: 18pt;
 	margin: 0rem;
 	padding: 0rem;
+	max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -143,6 +145,7 @@ a{
 	
 	#uppoints, #upp, #downpoints, #dwp {
 		height: 0rem !important;
+		padding: 0 !important;
 	}
 	
 	#pil {
