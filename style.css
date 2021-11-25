@@ -30,7 +30,6 @@ a{
 #content, #menu, #uppoints, #downpoints, #pil, #dirtel, #dirtel2{
 	max-width: 100% !important;
 	width: 30rem !important;
-	max-width: inherit !important;
 	background-color: white !important;
 	left: 50% !important;
     transform: translate(-50%, 0) !important;
