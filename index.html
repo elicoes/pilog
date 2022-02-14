@@ -68,6 +68,7 @@
 					<p id="content-text">Teràpia miofuncional</p>
 				</div>
 			</div>
+			<br><br>
 		</div>
 		
 		<div v-show="downcontinue==true" id="downpoints"><p id="dwp">...</p></div>
@@ -184,12 +185,10 @@
 					var perc = 100 * window.scrollY / (this.$refs.refqui.clientHeight - window.innerHeight);
 					this.upcontinue = (perc > 0);
 					this.downcontinue = (perc < 99);
-					console.log("Scroll YES");
 				}
 				else{
 					this.upcontinue = false;
 					this.downcontinue = false;
-					console.log("Scroll NOT");
 				}
 			}
 			else if (this.show == 'horari'){
@@ -197,12 +196,10 @@
 					var perc = 100 * window.scrollY / (this.$refs.refhorari.clientHeight - window.innerHeight);
 					this.upcontinue = (perc > 0);
 					this.downcontinue = (perc < 99);
-					console.log("Scroll YES");
 				}
 				else{
 					this.upcontinue = false;
 					this.downcontinue = false;
-					console.log("Scroll NOT");
 				}
 			}
 			else if (this.show == 'serveis'){
@@ -210,25 +207,21 @@
 					var perc = 100 * window.scrollY / (this.$refs.refserveis.clientHeight - window.innerHeight);
 					this.upcontinue = (perc > 0);
 					this.downcontinue = (perc < 99);
-					console.log("Scroll YES");
 				}
 				else{
 					this.upcontinue = false;
 					this.downcontinue = false;
-					console.log("Scroll NOT");
 				}
 			}
 			else{
 				this.upcontinue = false;
 				this.downcontinue = false;
-				console.log(this.show);
 			}
         }
 	}	
   });
   
   window.document.body.onscroll = function() {
-    console.log(13);
 }
 
 </script>
