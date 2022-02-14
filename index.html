@@ -37,10 +37,10 @@
 			<p id="content-text">No ho dubtis, si ens necessites estarem per tu. Truca’ns, t’hi esperem.</p>
 			<p id="prof-t">Logopeda</p>
 			<p id="prof-t2">Colegiada nº08-4445</p>
-			<img id="picture-prof" src="logop.png" v-on:click="qui">
+			<img id="picture-prof" src="logop.png" v-on:click="conill">
 			<p id="prof-t">Psicòloga</p>
 			<p id="prof-t2">Colegiada nº21226</p>
-			<img id="picture-prof" src="psico.png" v-on:click="qui">
+			<img id="picture-prof" src="psico.png" v-on:click="conill">
 		</div>
 		<div v-show="downcontinue==true" id="downpoints"><p id="dwp">...</p></div>
 		<div id="pil">
@@ -105,6 +105,9 @@
 			}
 			var tis = this;
 			setTimeout(function(){ tis.handleResize() }, 300);
+		},
+		conill: function () {
+			alert("Hola \n adeu");
 		},
 		handleResize: function () {
 			if (this.show == 'qui'){
