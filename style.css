@@ -276,29 +276,56 @@ a{
 
 #picture-logo {
     grid-column: 1;
-	grid-row: 2;
+	grid-row: 3;
+	width: 100%;
 }
 
 #picture-psico {
     grid-column: 2;
-	grid-row: 2;
+	grid-row: 3;
+	width: 100%;
 }
 
 #logo-t {
     grid-column: 1;
 	grid-row: 1;
+	width: 100%;
+}
+
+#logo-t2 {
+    grid-column: 1;
+	grid-row: 2;
+	width: 100%;
+}
+
+#logo-d {
+    grid-column: 1;
+	grid-row: 4;
+	width: 100%;
 }
 
 #psico-t {
     grid-column: 2;
+	grid-row: 2;
+	width: 100%;
+}
+
+#psico-t2 {
+    grid-column: 2;
 	grid-row: 1;
+	width: 100%;
+}
+
+#psico-d {
+    grid-column: 2;
+	grid-row: 4;
+	width: 100%;
 }
 
 .grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 10px;
-	grid-auto-rows: minmax(100px, auto);
+	grid-gap: 0.15rem;
 }
 
 .br2{
