@@ -40,7 +40,7 @@
 			<img id="picture-prof" src="logop.png" v-on:click="conill">
 			<p id="prof-t">Psicòloga</p>
 			<p id="prof-t2">Colegiada nº21226</p>
-			<img id="picture-prof" src="psico.png" v-on:click="conill">
+			<img id="picture-prof" src="psico.png" v-on:click="anna">
 		</div>
 		<div v-show="downcontinue==true" id="downpoints"><p id="dwp">...</p></div>
 		<div id="pil">
@@ -107,7 +107,10 @@
 			setTimeout(function(){ tis.handleResize() }, 300);
 		},
 		conill: function () {
-			alert("Graduada en Logopèdia\nExperiència en nens amb dificultats en el desenvolupament del llenguatge, parla i aprenentatge\nExperiència en terapies de veu\nPostgraus en deglució, veu i transtorns del llenguatge oral");
+			alert("Graduada en Logopèdia\nExperiència en nens amb dificultats en el desenvolupament del llenguatge, parla i aprenentatge\nExperiència en teràpies de veu\nPostgraus en deglució, veu i trastorns del llenguatge oral.");
+		},
+		anna: function () {
+			alert("Graduada en Psicologia\nExperiència en diferents àmbits, tan en orientació laboral, psicologia educativa i sanitaria.\nMaster en psicologia general sanitaria.\nMaster en paidopsiquiatria i psicologia del nen i de l'adolescent.");
 		},
 		handleResize: function () {
 			if (this.show == 'qui'){
