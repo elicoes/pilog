@@ -207,6 +207,7 @@
 					var perc = 100 * window.scrollY / (this.$refs.refserveis.clientHeight - window.innerHeight);
 					this.upcontinue = (perc > 0);
 					this.downcontinue = (perc < 99);
+					console.log(perc);
 				}
 				else{
 					this.upcontinue = false;
