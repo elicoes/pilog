@@ -21,7 +21,7 @@
 			<br class="br2">
 			<input :id="horarib" type="button" value="Horari" v-on:click="horari">
 			<br class="br1">
-			<input id="button" type="button" value="Serveis">
+			<input :id="serveisb" type="button" value="Serveis" v-on:click="serveis">
 			<br class="br2">
 			<input id="button" type="button" value="Tarifes">
 		</div>
@@ -49,6 +49,25 @@
 			<p id="prof-t" class="colorblue">Logopèdia</p>
 			<p id="content-text" class="colorblue">De dilluns a dissabte de 9h a 13:30h</p>
 			<p id="content-text" class="colorblue">Dijous i divendres de 16h a 20h</p>
+		</div>
+		
+		<div v-show="show=='serveis'" id="content" ref="refqui">
+			<div class="wrapper">
+				<p id="prof-t" class="one">Psicologia</p>
+				<div class="two">
+					<p id="content-text">Psicopedagogia</p>
+					<p id="content-text">Orientació i assessorament</p>
+					<p id="content-text">Psicologia infanto-juvenil</p>
+					<p id="content-text">Psicologia d'adults</p>
+				</div>
+				<p id="prof-t" class="three">Logopedia</p>
+				<div class="four">
+					<p id="content-text">Alteracions de la parla</p>
+					<p id="content-text">Alteracions del llenguatge</p>
+					<p id="content-text">Reeducació de la veu</p>
+					<p id="content-text">Teràpia miofuncional</p>
+				</div>
+			</div>
 		</div>
 		
 		<div v-show="downcontinue==true" id="downpoints"><p id="dwp">...</p></div>
@@ -91,6 +110,7 @@
 		show: 'initial',
 		quib: 'button',
 		horarib: 'button',
+		serveisb: 'button',
 		upcontinue: false,
 		downcontinue: false
 	},
@@ -108,11 +128,14 @@
 			if (this.show == 'qui'){
 				this.show = 'initial';
 				this.quib = 'button';
+				this.horarib = 'button';
+				this.serveisb = 'button';
 			}
 			else{
 				this.show = 'qui';
 				this.quib = 'buttonOK';
 				this.horarib = 'button';
+				this.serveisb = 'button';
 			}
 			var tis = this;
 			setTimeout(function(){ tis.handleResize() }, 300);
@@ -121,11 +144,30 @@
 			if (this.show == 'horari'){
 				this.show = 'initial';
 				this.quib = 'button';
+				this.horarib = 'button';
+				this.serveisb = 'button';
 			}
 			else{
 				this.show = 'horari';
 				this.quib = 'button';
 				this.horarib = 'buttonOK';
+				this.serveisb = 'button';
+			}
+			var tis = this;
+			setTimeout(function(){ tis.handleResize() }, 300);
+		},
+		serveis: function () {
+			if (this.show == 'serveis'){
+				this.show = 'initial';
+				this.quib = 'button';
+				this.horarib = 'button';
+				this.serveisb = 'button';
+			}
+			else{
+				this.show = 'horari';
+				this.quib = 'button';
+				this.horarib = 'button';
+				this.serveisb = 'buttonOK';
 			}
 			var tis = this;
 			setTimeout(function(){ tis.handleResize() }, 300);
