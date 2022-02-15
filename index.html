@@ -52,7 +52,7 @@
 		</div>
 		
 		<div v-show="show=='serveis'" id="content" ref="refserveis">
-			<div class="wrapper" ref="refinserveis">
+			<div class="wrapper">
 				<p id="prof-t" class="one">Psicologia</p>
 				<div class="two">
 					<p id="content-text">Psicopedagogia</p>
@@ -68,7 +68,7 @@
 					<p id="content-text">Teràpia miofuncional</p>
 				</div>
 			</div>
-			<br><br>
+			<br ref="refbr"><br>
 		</div>
 		
 		<div v-show="downcontinue==true" id="downpoints"><p id="dwp">...</p></div>
@@ -206,8 +206,8 @@
 				if (this.$refs.refserveis.clientHeight > window.innerHeight){
 					var perc = 100 * Math.ceil(window.scrollY) / (this.$refs.refserveis.clientHeight - window.innerHeight);
 					this.upcontinue = (perc > 0);
-					this.downcontinue = (perc < (99 - (this.$refs.refinserveis.clientHeight / this.$refs.refserveis.clientHeight)));
-					console.log(this.$refs.refinserveis.clientHeight / this.$refs.refserveis.clientHeight);
+					this.downcontinue = (perc < (99 - 99 * ((this.$refs.refbr.clientHeight * 2) / this.$refs.refserveis.clientHeight)));
+					console.log(99 * ((this.$refs.refbr.clientHeight * 2) / this.$refs.refserveis.clientHeight));
 				}
 				else{
 					this.upcontinue = false;
