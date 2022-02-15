@@ -207,6 +207,7 @@
 					var perc = 100 * Math.ceil(window.scrollY) / (this.$refs.refserveis.clientHeight - window.innerHeight);
 					this.upcontinue = (perc > 0);
 					this.downcontinue = (perc < (99 - 99 * ((this.$refs.refbr.clientHeight * 2) / this.$refs.refserveis.clientHeight)));
+					console.log("Client h br = " + this.$refs.refbr.clientHeight);
 					console.log(99 * ((this.$refs.refbr.clientHeight * 2) / this.$refs.refserveis.clientHeight));
 				}
 				else{
