@@ -69,9 +69,8 @@
 				</div>
 			</div>
 			<div ref="refbr">
-				<br>
+				<br><br>
 			</div>
-			<br>
 		</div>
 		
 		<div v-show="downcontinue==true" id="downpoints"><p id="dwp">...</p></div>
@@ -209,9 +208,9 @@
 				if (this.$refs.refserveis.clientHeight > window.innerHeight){
 					var perc = 100 * Math.ceil(window.scrollY) / (this.$refs.refserveis.clientHeight - window.innerHeight);
 					this.upcontinue = (perc > 0);
-					this.downcontinue = (perc < (99 - 99 * ((this.$refs.refbr.clientHeight * 2) / this.$refs.refserveis.clientHeight)));
-					console.log("Client h br = " + this.$refs.refbr.clientHeight);
-					console.log(99 * ((this.$refs.refbr.clientHeight * 2) / this.$refs.refserveis.clientHeight));
+					this.downcontinue = (perc < (99 - 100 * ((this.$refs.refbr.clientHeight) / this.$refs.refserveis.clientHeight)));
+					console.log("Client altura br = " + this.$refs.refbr.clientHeight);
+					console.log(100 * ((this.$refs.refbr.clientHeight) / this.$refs.refserveis.clientHeight) + " Percent = " + perc);
 				}
 				else{
 					this.upcontinue = false;
