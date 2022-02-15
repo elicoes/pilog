@@ -206,10 +206,9 @@
 			}
 			else if (this.show == 'serveis'){
 				if (this.$refs.refserveis.clientHeight > window.innerHeight){
-					var perc = 100 * Math.ceil(window.scrollY) / ((this.$refs.refserveis.clientHeight - this.$refs.refbr.clientHeight) - window.innerHeight);
+					var perc = 100 * Math.ceil(window.scrollY) / ((this.$refs.refserveis.clientHeight + this.$refs.refbr.clientHeight) - window.innerHeight);
 					this.upcontinue = (perc > 0);
 					this.downcontinue = (perc < 99);
-					console.log("Client altura br = " + this.$refs.refbr.clientHeight);
 				}
 				else{
 					this.upcontinue = false;
