@@ -206,9 +206,9 @@
 			}
 			else if (this.show == 'serveis'){
 				if ((this.$refs.refserveis.clientHeight - this.$refs.refbr.clientHeight) > window.innerHeight){
-					var perc = 100 * Math.ceil(window.scrollY) / ((this.$refs.refserveis.clientHeight + this.$refs.refbr.clientHeight) - window.innerHeight);
+					var perc = 100 * Math.ceil(window.scrollY) / (this.$refs.refserveis.clientHeight - window.innerHeight);
 					this.upcontinue = (perc > 0);
-					this.downcontinue = (perc < 95);
+					this.downcontinue = (perc < 99 - Math.ceil(100 * this.$refs.refbr.clientHeight / this.$refs.refserveis.clientHeight));
 				}
 				else{
 					this.upcontinue = false;
