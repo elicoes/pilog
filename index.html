@@ -23,7 +23,7 @@
 			<br class="br1">
 			<input :id="serveisb" type="button" value="Serveis" v-on:click="serveis">
 			<br class="br2">
-			<input id="button" type="button" value="Tarifes">
+			<input :id="tarifesb" type="button" value="Tarifes" v-on:click="tarifes">
 		</div>
 		<div v-show="upcontinue==true" id="uppoints"><p id="upp">...</p></div>
 		<div v-show="show=='initial'" id="content">
@@ -42,6 +42,7 @@
 			<p id="prof-t2">Col·legiada nº21226</p>
 			<img id="picture-prof" src="psico.png" v-on:click="anna">
 		</div>
+		
 		<div v-show="show=='horari'" id="content" ref="refhorari">
 			<p id="prof-t">Psicologia</p>
 			<p id="content-text">Dimarts de 16h a 20h</p>
@@ -72,6 +73,23 @@
 				<br><br>
 			</div>
 		</div>
+		
+		<div v-show="show=='tarifes'" id="content" ref="reftarifes">
+			<p id="prof-t">Psicologia</p>
+			<p id="content-text">30 minuts <b>25€<sup>1</sup></b></p>
+			<p id="content-text">1 hora <b>40€<sup>2</sup></b></p>
+			<p id="prof-t" class="colorblue">Logopèdia matins</p>
+			<p id="content-text">30 minuts <b>20€<sup>2</sup></b></p>
+			<p id="content-text">45 minuts <b>30€<sup>2</sup></b></p>
+			<p id="prof-t" class="colorblue">Logopèdia tardes</p>
+			<p id="content-text">30 minuts <b>25€<sup>1</sup></b></p>
+			<p id="content-text">45 minuts <b>35€<sup>2</sup></b></p>
+			<p id="prof-t">Ofertes</p>
+			<p id="content-text"><i><sup>1</sup>20% de descompte en pacs de 10 session</i></p>
+			<p id="content-text"><i><sup>2</sup>15% de descompte en pacs de 10 session</i></p>
+		</div>
+		
+		
 		
 		<div v-show="downcontinue==true" id="downpoints"><p id="dwp">...</p></div>
 		<div id="pil">
@@ -114,6 +132,7 @@
 		quib: 'button',
 		horarib: 'button',
 		serveisb: 'button',
+		tarifesb: 'button',
 		upcontinue: false,
 		downcontinue: false
 	},
@@ -133,12 +152,14 @@
 				this.quib = 'button';
 				this.horarib = 'button';
 				this.serveisb = 'button';
+				this.tarifesb = 'button';
 			}
 			else{
 				this.show = 'qui';
 				this.quib = 'buttonOK';
 				this.horarib = 'button';
 				this.serveisb = 'button';
+				this.tarifesb = 'button';
 			}
 			var tis = this;
 			setTimeout(function(){ tis.handleResize() }, 300);
@@ -149,12 +170,14 @@
 				this.quib = 'button';
 				this.horarib = 'button';
 				this.serveisb = 'button';
+				this.tarifesb = 'button';
 			}
 			else{
 				this.show = 'horari';
 				this.quib = 'button';
 				this.horarib = 'buttonOK';
 				this.serveisb = 'button';
+				this.tarifesb = 'button';
 			}
 			var tis = this;
 			setTimeout(function(){ tis.handleResize() }, 300);
@@ -164,13 +187,33 @@
 				this.show = 'initial';
 				this.quib = 'button';
 				this.horarib = 'button';
+				this.tarifesb = 'button';
 				this.serveisb = 'button';
 			}
 			else{
 				this.show = 'serveis';
 				this.quib = 'button';
 				this.horarib = 'button';
+				this.tarifesb = 'button';
 				this.serveisb = 'buttonOK';
+			}
+			var tis = this;
+			setTimeout(function(){ tis.handleResize() }, 300);
+		},
+		tarifes: function () {
+			if (this.show == 'serveis'){
+				this.show = 'initial';
+				this.quib = 'button';
+				this.horarib = 'button';
+				this.serveisb = 'button';
+				this.tarifesb = 'button';
+			}
+			else{
+				this.show = 'serveis';
+				this.quib = 'button';
+				this.horarib = 'button';
+				this.serveisb = 'button';
+				this.tarifesb = 'buttonOK';
 			}
 			var tis = this;
 			setTimeout(function(){ tis.handleResize() }, 300);
