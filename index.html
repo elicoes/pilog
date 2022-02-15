@@ -182,7 +182,7 @@
 		handleResize: function () {
 			if (this.show == 'qui'){
 				if (this.$refs.refqui.clientHeight > window.innerHeight){
-					var perc = 100 * window.scrollY / (this.$refs.refqui.clientHeight - window.innerHeight);
+					var perc = 100 * Math.ceil(window.scrollY) / (this.$refs.refqui.clientHeight - window.innerHeight);
 					this.upcontinue = (perc > 0);
 					this.downcontinue = (perc < 99);
 				}
@@ -193,7 +193,7 @@
 			}
 			else if (this.show == 'horari'){
 				if (this.$refs.refhorari.clientHeight > window.innerHeight){
-					var perc = 100 * window.scrollY / (this.$refs.refhorari.clientHeight - window.innerHeight);
+					var perc = 100 * Math.ceil(window.scrollY) / (this.$refs.refhorari.clientHeight - window.innerHeight);
 					this.upcontinue = (perc > 0);
 					this.downcontinue = (perc < 99);
 				}
@@ -206,8 +206,7 @@
 				if (this.$refs.refserveis.clientHeight > window.innerHeight){
 					var perc = 100 * Math.ceil(window.scrollY) / (this.$refs.refserveis.clientHeight - window.innerHeight);
 					this.upcontinue = (perc > 0);
-					this.downcontinue = (perc < 99);
-					console.log(perc + ":" + this.$refs.refserveis.clientHeight + " - " + window.innerHeight + " -> " + Math.ceil(window.scrollY));
+					this.downcontinue = (perc < 95);
 				}
 				else{
 					this.upcontinue = false;
