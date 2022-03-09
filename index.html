@@ -41,7 +41,7 @@
 			<p id="prof-t" class="br2">Logopeda</p>
 			<p id="prof-t2" class="br2">Col·legiada nº08-4445</p>
 			<div class="container">
-				<img id="picture-prof" src="logop.png" v-on:click="conill">
+				<img id="picture-prof" src="logop.png">
 				<dl class="element2">
 					<dd id="prof-t" class="inverseBr2">Logopeda</dd>
 					<dd id="prof-t2" class="inverseBr2">Col·legiada nº08-4445</dd>
@@ -54,7 +54,7 @@
 			<p id="prof-t" class="br2">Psicòloga</p>
 			<p id="prof-t2" class="br2">Col·legiada nº21226</p>
 			<div class="container">
-				<img id="picture-prof2" src="psico.png" v-on:click="anna">
+				<img id="picture-prof2" src="psico.png">
 				<dl class="element22">
 					<dd id="prof-t" class="inverseBr2">Psicòloga</dd>
 					<dd id="prof-t2" class="inverseBr2">Col·legiada nº21226</dd>
@@ -228,12 +228,6 @@
 			}
 			var tis = this;
 			setTimeout(function(){ tis.handleResize() }, 300);
-		},
-		conill: function () {
-			alert("Graduada en Logopèdia\nExperiència en nens amb dificultats en el desenvolupament del llenguatge, parla i aprenentatge.\nExperiència en teràpies de veu.\nPostgraus en deglució, veu i trastorns del llenguatge oral.");
-		},
-		anna: function () {
-			alert("Graduada en Psicologia\nExperiència en diferents àmbits, tan en orientació laboral, psicologia educativa i sanitaria.\nMaster en psicologia general sanitaria.\nMaster en paidopsiquiatria i psicologia del nen i de l'adolescent.");
 		},
 		handleResize: function () {
 			if (this.show == 'qui'){
