@@ -77,6 +77,41 @@ a{
 	}
 }
 
+dd{
+	margin-inline-start: 1rem;
+	font-size: 0.9rem;
+}
+
+.element2{
+	grid-row: 1;
+	grid-column: 2;
+	margin-top: 0rem;
+}
+
+#picture-prof {
+	justify-self: center;
+	margin-top: 2rem;
+	margin-bottom: 0.2rem;
+	grid-column: 1;
+	grid-row: 1;
+	height: 7rem;
+}
+
+.element22{
+	grid-column: 1;
+	grid-row: 1;
+	margin-top: 0rem;
+}
+
+#picture-prof2 {
+	justify-self: center;
+	margin-top: 2rem;
+	margin-bottom: 0.2rem;
+	grid-column: 2;
+	grid-row: 1;
+	height: 7rem;
+}
+
 @media not all and (min-width: 700px){
 	.i{
 		display: none !important;
@@ -273,12 +308,6 @@ a{
     width: 16rem;
 }
 
-#picture-prof {
-	max-width: 70%;
-    height: auto;
-    width: 8rem;
-}
-
 #prof-t {
 	max-width: 25rem;
 	font-size: 1.2rem;
@@ -299,6 +328,10 @@ a{
 
 .br2{
 	display: none;
+}
+
+.inverseBr2{
+	display: inherit;
 }
 
 .br1{
@@ -373,8 +406,26 @@ a{
 }
 
 @media all and (max-width: 325px){
+	.element2, .element22{
+		grid-column: 1; 
+		grid-row: 2;
+	}
+	
+	#picture-prof, #picture-prof2 {
+		margin-top: 0.2rem;
+		margin-bottom: 0.2rem;
+		grid-column: 1;
+		grid-row: 1;
+		height: auto;
+		max-width: 70%;
+	}
+	
 	.br2{
 		display: inherit !important;
+	}
+	
+	.inverseBr2{
+		display: none !important;
 	}
 	
 	#menu {
@@ -429,4 +480,8 @@ a{
 p{
 	margin-top: 0.1rem;
 	margin-bottom: 0.2rem;
+}
+
+.container{
+	display: grid;
 }

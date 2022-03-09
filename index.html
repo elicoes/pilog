@@ -19,7 +19,7 @@
 		<div id="menu">
 			<input :id="quib" type="button" value="Qui som?" v-on:click="qui">
 			<br class="br2">
-			<input :id="horarib" type="button" value="Horari" v-on:click="horari">
+			<input :id="horarib" type="button" value="Equip" v-on:click="horari">
 			<br class="br1">
 			<input :id="serveisb" type="button" value="Serveis" v-on:click="serveis">
 			<br class="br2">
@@ -35,21 +35,35 @@
 			<img id="picture" src="presentacio.jpg">
 			<p id="content-text">Sabem que cada pacient és un mon i oferim un tractament personalitzat a cada un d’ells per aconseguir els objectius establerts.</p>
 			<p id="content-text">No ho dubtis, si ens necessites estarem per tu. Truca’ns, t’hi esperem.</p>
-			<p id="prof-t">Logopeda</p>
-			<p id="prof-t2">Col·legiada nº08-4445</p>
-			<img id="picture-prof" src="logop.png" v-on:click="conill">
-			<p id="prof-t">Psicòloga</p>
-			<p id="prof-t2">Col·legiada nº21226</p>
-			<img id="picture-prof" src="psico.png" v-on:click="anna">
 		</div>
 		
 		<div v-show="show=='horari'" id="content" ref="refhorari">
-			<p id="prof-t">Psicologia</p>
-			<p id="content-text">Dimarts de 16h a 20h</p>
-			<p id="content-text">Dissabte de 10h a 13h</p>
-			<p id="prof-t" class="colorblue">Logopèdia</p>
-			<p id="content-text" class="colorblue">De dilluns a dissabte de 9h a 13:30h</p>
-			<p id="content-text" class="colorblue">Dijous i divendres de 16h a 20h</p>
+			<p id="prof-t" class="br2">Logopeda</p>
+			<p id="prof-t2" class="br2">Col·legiada nº08-4445</p>
+			<div class="container">
+				<img id="picture-prof" src="logop.png" v-on:click="conill">
+				<dl class="element2">
+					<dd id="prof-t" class="inverseBr2">Logopeda</dd>
+					<dd id="prof-t2" class="inverseBr2">Col·legiada nº08-4445</dd>
+					<dd>- Graduada en Logopèdia</dd>
+					<dd>- Experiència en nens amb dificultats en el desenvolupament del llenguatge, parla i aprenentatge.</dd>
+					<dd>- Experiència en teràpies de veu.</dd>
+					<dd>- Postgraus en deglució, veu i trastorns del llenguatge oral.</dd>
+				</dl>
+			</div>
+			<p id="prof-t" class="br2">Psicòloga</p>
+			<p id="prof-t2" class="br2">Col·legiada nº21226</p>
+			<div class="container">
+				<img id="picture-prof2" src="psico.png" v-on:click="anna">
+				<dl class="element22">
+					<dd id="prof-t" class="inverseBr2">Psicòloga</dd>
+					<dd id="prof-t2" class="inverseBr2">Col·legiada nº21226</dd>
+					<dd>- Graduada en Psicologia</dd>
+					<dd>- Experiència en diferents àmbits, tan en orientació laboral, psicologia educativa i sanitaria.</dd>
+					<dd>- Master en psicologia general sanitaria.</dd>
+					<dd>- Master en paidopsiquiatria i psicologia del nen i de l'adolescent.</dd>
+				</dl>
+			</div>
 		</div>
 		
 		<div v-show="show=='serveis'" id="content" ref="refserveis">
