@@ -152,6 +152,16 @@ dd{
 		z-index: 3;
 	}
 	
+	#reservar {
+		margin-top: 3.25rem;
+		position: absolute;
+		height: 1rem;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 100%;
+		z-index: 3;
+	}
+	
 	#menu {
 		padding-top: 5rem;
 		position: relative;
@@ -214,6 +224,16 @@ dd{
 		margin-top: 1rem;
 		position: fixed;
 		height: 2.5rem;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 100%;
+		z-index: 3;
+	}
+	
+	#reservar {
+		margin-top: 3.25rem;
+		position: fixed;
+		height: 1rem;
 		left: 50%;
 		transform: translate(-50%, 0);
 		width: 100%;
