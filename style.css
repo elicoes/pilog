@@ -158,7 +158,6 @@ dd{
 		height: 1rem;
 		left: 50%;
 		transform: translate(-50%, 0);
-		width: 100%;
 		z-index: 3;
 	}
 	
@@ -236,7 +235,6 @@ dd{
 		height: 1rem;
 		left: 50%;
 		transform: translate(-50%, 0);
-		width: 100%;
 		z-index: 3;
 	}
 	
