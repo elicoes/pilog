@@ -116,10 +116,6 @@ dd{
 	.i{
 		display: none !important;
 	}
-	
-	#logo {
-		width: 20rem !important;
-	}
 }
 
 #dirtel, #dirtel2 {
@@ -215,10 +211,6 @@ dd{
 		text-align: center;
 		display: inline-grid;
 		width: 100%;
-	}
-	
-	#logo {
-		width: 20rem !important;
 	}
 }
 
@@ -326,8 +318,7 @@ dd{
 
 #logo {
     max-width: 80%;
-    height: auto;
-    width: 20rem;
+    object-fit: scale-down;
 }
 
 #picture {
