@@ -502,9 +502,10 @@ dd{
 
 #content-text{
 	max-width: 25rem;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	text-align: center;
     margin: 0.3rem;
+	font-family: 'Josefin Sans';
 }
 
 p{
