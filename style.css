@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Squada+One&family=Yanone+Kaffeesatz:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 html, body {
 	font-size: 15pt;
 	margin: 0rem;
@@ -82,8 +81,9 @@ a{
 dd{
 	margin-inline-start: 1rem;
 	font-size: 0.9rem;
-	font-family: 'Yanone Kaffeesatz' !important;
+	font-family: 'Josefin Sans', sans-serif;
 	margin-right: 1rem;
+	margin-left: 1rem;
 }
 
 .element2{
@@ -98,13 +98,15 @@ dd{
 	margin-bottom: 0.2rem;
 	grid-column: 1;
 	grid-row: 1;
-	height: 7rem;
+	width: 7rem;
+    margin-left: 0.5rem;
 }
 
 .element22{
 	grid-column: 1;
 	grid-row: 1;
 	margin-top: 0rem;
+	text-align: right;
 }
 
 #picture-prof2 {
@@ -113,7 +115,8 @@ dd{
 	margin-bottom: 0.2rem;
 	grid-column: 2;
 	grid-row: 1;
-	height: 7rem;
+	width: 7rem;
+    margin-right: 0.5rem;
 }
 
 @media not all and (min-width: 700px){
@@ -334,17 +337,19 @@ dd{
 #prof-t {
 	max-width: 25rem;
 	font-size: 1.2rem;
-	text-align: center;
     margin: 0.3rem;
-	font-family: 'Squada One';
+	font-family: 'Squada One' !important;
+	margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 #prof-t2 {
 	max-width: 25rem;
 	font-size: 0.6rem;
-	text-align: center;
     margin: 0.15rem;
-	font-family: 'Squada One';
+	font-family: 'Squada One' !important;
+	margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .colorblue{
