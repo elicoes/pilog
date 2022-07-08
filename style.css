@@ -39,7 +39,7 @@ a{
 
 @media all and (max-width: 525px) and (min-height: 40rem){
 	#content {
-		padding-top: 8rem  !important;
+		padding-top: 9rem  !important;
 		min-height: calc(100% - 18rem) !important;
 	}
 	
@@ -50,7 +50,7 @@ a{
 
 @media all and (max-width: 325px) and (min-height: 40rem){
 	#content {
-		padding-top: 10rem  !important;
+		padding-top: 11rem  !important;
 		min-height: calc(100% - 20rem) !important;
 	}
 	
