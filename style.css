@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&family=Yanone+Kaffeesatz:wght@200&display=swap');
+
 html, body {
 	font-size: 15pt;
 	margin: 0rem;
@@ -80,6 +82,8 @@ a{
 dd{
 	margin-inline-start: 1rem;
 	font-size: 0.9rem;
+	font-family: 'Yanone Kaffeesatz' !important;
+	margin-right: 1rem;
 }
 
 .element2{
@@ -332,6 +336,7 @@ dd{
 	font-size: 1.2rem;
 	text-align: center;
     margin: 0.3rem;
+	font-family: 'Squada One';
 }
 
 #prof-t2 {
@@ -339,6 +344,7 @@ dd{
 	font-size: 0.6rem;
 	text-align: center;
     margin: 0.15rem;
+	font-family: 'Squada One';
 }
 
 .colorblue{
