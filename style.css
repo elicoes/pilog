@@ -394,20 +394,6 @@ dd{
   grid-row: 2;
 }
 
-@media all and (max-width: 525px){
-	.br1{
-		display: inherit !important;
-	}
-	
-	#menu {
-		height: 3rem !important;
-	}
-	
-	#dirtel{
-		font-size: 0.8rem;
-	}
-}
-
 @media all and (max-width: 400px){
 	.br1{
 		display: inherit !important;
@@ -506,6 +492,20 @@ dd{
 	text-align: center;
     margin: 0.3rem;
 	font-family: 'Josefin Sans';
+}
+
+#apunt, #aputnguio{
+	max-width: 25rem;
+	width: 100%;
+	font-size: 0.75rem;
+	text-align: left;
+    margin: 0.3rem;
+	margin-left: 1rem;
+	font-family: 'Josefin Sans';
+}
+
+#aputnguio{
+	margin-left: 3rem !important;
 }
 
 p{
