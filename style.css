@@ -156,11 +156,12 @@ dd{
 	}
 	
 	#reservar {
-		margin-top: 3.75rem;
+		margin-top: 3.5rem;
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%, 0);
 		z-index: 3;
+		display: inline-flex;
 	}
 	
 	#menu {
@@ -222,8 +223,9 @@ dd{
 	text-decoration: none;
 	padding: 0.3rem;
 	color: white;
-	margin-left: 1rem;
 	margin-right: 1rem;
+	width: 8rem;
+	height: 1rem;
 }
 
 #resbuttW{
@@ -234,7 +236,8 @@ dd{
 	padding: 0.3rem;
 	color: white;
 	margin-left: 1rem;
-	margin-right: 1rem;
+	width: 8rem;
+	height: 1rem;
 }
 
 /*Mas grande que 35rem de width*/
@@ -250,11 +253,12 @@ dd{
 	}
 	
 	#reservar {
-		margin-top: 3.75rem;
+		margin-top: 3.5rem;
 		position: fixed;
 		left: 50%;
 		transform: translate(-50%, 0);
 		z-index: 3;
+		display: inline-flex;
 	}
 	
 	#menu {
