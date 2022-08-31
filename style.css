@@ -156,17 +156,11 @@ dd{
 	}
 	
 	#reservar {
-		margin-top: 3.5rem;
+		margin-top: 3.75rem;
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%, 0);
 		z-index: 3;
-		background-color: #00a4ff;
-		border-radius: 0.5rem;
-		text-align: center;
-		text-decoration: none;
-		padding: 0.3rem;
-		color: white;
 	}
 	
 	#menu {
@@ -221,6 +215,28 @@ dd{
 	}
 }
 
+#resbutt{
+	background-color: #00a4ff;
+	border-radius: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	padding: 0.3rem;
+	color: white;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+#resbuttW{
+	background-color: #4EC95C;
+	border-radius: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	padding: 0.3rem;
+	color: white;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
 /*Mas grande que 35rem de width*/
 @media not all and (max-height: 40rem) {
 	#title {
@@ -234,17 +250,11 @@ dd{
 	}
 	
 	#reservar {
-		margin-top: 3.5rem;
+		margin-top: 3.75rem;
 		position: fixed;
 		left: 50%;
 		transform: translate(-50%, 0);
 		z-index: 3;
-		background-color: #00a4ff;
-		border-radius: 0.5rem;
-		text-align: center;
-		text-decoration: none;
-		padding: 0.3rem;
-		color: white;
 	}
 	
 	#menu {

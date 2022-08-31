@@ -6,7 +6,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./style.css?v=0.3">
+	<link rel="stylesheet" href="./style.css?v=0.5">
 	
 	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 	
@@ -16,9 +16,14 @@
 	<div id="page">
 		<!--a class="zl-facility-url" href="https://www.doctoralia.es/clinicas/centre-de-logopedia-i-psicologia-pilog" rel="nofollow" data-zlw-facility="centre-de-logopedia-i-psicologia-pilog" data-zlw-type="facility-button" data-zlw-saas-only="false">Centre de Logopèdia i Psicologia PiLog</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script-->
 		<img id="title" src="tittle.svg">
-		<a id = "reservar" href="https://www.doctoralia.es/clinicas/centre-de-logopedia-i-psicologia-pilog"> Demana cita aquí </a>
+		<div id="reservar">
+		<a id="resbutt" href="https://www.doctoralia.es/clinicas/centre-de-logopedia-i-psicologia-pilog"> Demana cita aquí </a>
+		<a id="resbuttW" href="https://wa.me/34640574410/"> WhatsApp aquí </a>
+		</div>
 		<!--a id = "reservar" class="zl-facility-url" href="https://www.doctoralia.es/clinicas/centre-de-logopedia-i-psicologia-pilog" rel="nofollow" data-zlw-facility="centre-de-logopedia-i-psicologia-pilog" data-zlw-type="facility-button" data-zlw-saas-only="false">Centre de Logopèdia i Psicologia PiLog</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script-->
-
+		<!--a href="https://wa.me/34555005500/?text=tu%20texto%20personalizado" target="_blank">
+			<img src="WhatsApp_Logo.png" width="50" height="50">
+		</a-->
 		
 		<div id="menu">
 			<input :id="quib" type="button" value="Qui som?" v-on:click="qui">
