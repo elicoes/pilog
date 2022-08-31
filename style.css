@@ -50,12 +50,12 @@ a{
 
 @media all and (max-width: 325px) and (min-height: 40rem){
 	#content {
-		padding-top: 11rem  !important;
-		min-height: calc(100% - 20rem) !important;
+		padding-top: 13rem  !important;
+		min-height: calc(100% - 22rem) !important;
 	}
 	
 	#uppoints {
-		top: 10rem !important;
+		top: 11.5rem !important;
 	}
 }
 
@@ -460,6 +460,24 @@ dd{
 	
 	#menu {
 		height: 5rem !important;
+		padding-top: 7rem !important;
+	}
+	
+	#reservar{
+		display: inline-block !important;
+		margin-top: 3.25rem !important;
+	}
+	
+	#resbutt, #resbuttW{
+		margin: 0.2rem !important;
+		margin-left: 0rem !important;
+		left: 50%;
+		transform: translate(-50%, 0);
+		position: fixed;
+	}
+	
+	#resbuttW{
+		margin-top: 1rem !important;
 	}
 }
 
@@ -509,16 +527,15 @@ dd{
 }
 
 #apunt, #aputnguio{
-	width: 18rem;
+	width: 75%;
 	font-size: 0.75rem;
 	text-align: left;
-    margin: 0.3rem;
-	margin-left: 1rem;
+    margin-right: 5%;
 	font-family: 'Josefin Sans';
 }
 
 #aputnguio{
-	margin-left: 3rem !important;
+	margin-left: 15% !important;
 }
 
 p{
