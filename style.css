@@ -495,8 +495,7 @@ dd{
 }
 
 #apunt, #aputnguio{
-	max-width: 25rem;
-	width: 100%;
+	width: 20rem;
 	font-size: 0.75rem;
 	text-align: left;
     margin: 0.3rem;
