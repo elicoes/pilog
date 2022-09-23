@@ -8,6 +8,7 @@
 </head>
 <body>
 	<div id="page">
+		<div id="top"></div>
 		<img id="title" src="./resources/pictures/logo_mini.svg">
 		<div class="resume">
 			<a href="https://www.google.com/maps?cid=1415433934649223619&authuser=3"><img class="ico" src="./resources/pictures/nav.svg"></a>
@@ -17,13 +18,13 @@
 			<a href="mailto:pilog.girona@gmail.com"><img class="ico" src="./resources/pictures/email.svg"></a>
 			<a class="itemnone" href="mailto:pilog.girona@gmail.com">pilog.girona@gmail.com</a>
 		</div>
-		<div class="linemenu"> </div>
+		<div id="linemenu" class="linemenu"> </div>
 		<div class="topnav">
-		  <a class="a_menuitem" href="#home">Qui som?</a>
-		  <a class="menuitem" href="#news">Serveis</a>
-		  <a class="menuitem" href="#contact">Equip</a>
-		  <a class="menuitem" href="#about">Tarifes</a>
-		  <a class="menuitem" href="#about">Contacte</a>
+		  <a :class="c_qui" v-on:click="how" href="#home">Qui som?</a>
+		  <a :class="c_serveis" v-on:click="serveis" href="#serveis">Serveis</a>
+		  <a class="menuitem" href="#equip">Equip</a>
+		  <a class="menuitem" href="#tarifes">Tarifes</a>
+		  <a class="menuitem" href="#contacte">Contacte</a>
 		  <img class="menuico" src="./resources/pictures/menu.svg">
 		</div>
 		
@@ -37,8 +38,25 @@
 					<p>També oferim psicoteràpia mitjançant videotrucada a través de la pàgina de doctoralia per si no pots venir a consulta.</p>
 				</div>
 			</div>
-			<div class="linerel"> Serveis </div>
-		</div>
+			
+			<div id="idServeis" class="linerel"> Serveis </div>
+				<div id = "service">
+					<img id="logoqui" src="logo.svg">
+					<div id="textqui">
+						<p><strong>PiLog</strong> és un centre de Psicologia i Logopèdia situat al barri de Montilivi de Girona.</p>
+						<p>Proporcionem teràpia psicològica i logopèdica presencial, a la nostra consulta, mitjançant un tractament completament personalitzat.</p>
+						<p>També oferim psicoteràpia mitjançant videotrucada a través de la pàgina de doctoralia per si no pots venir a consulta.</p>
+					</div>
+				</div>
+				<div id = "service">
+					<img id="logoqui" src="logo.svg">
+					<div id="textqui">
+						<p><strong>PiLog</strong> és un centre de Psicologia i Logopèdia situat al barri de Montilivi de Girona.</p>
+						<p>Proporcionem teràpia psicològica i logopèdica presencial, a la nostra consulta, mitjançant un tractament completament personalitzat.</p>
+						<p>També oferim psicoteràpia mitjançant videotrucada a través de la pàgina de doctoralia per si no pots venir a consulta.</p>
+					</div>
+				</div>
+			</div>
 		
 	</div>
 </body>
@@ -47,24 +65,52 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213586676-1">
 </script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-  gtag('config', 'UA-213586676-1');
-  
-  var vue = new Vue({
-	el: '#page',
-	data: {
-		
-	},
-    created() {
-        
-    },
-	methods: {
-		
-	}	
-  });
+	gtag('config', 'UA-213586676-1');
+	
+	var vue = new Vue({
+		el: '#page',
+		data: {
+			c_serveis: "menuitem",
+			c_qui: "a_menuitem"
+		},
+		created() {
+			
+		},
+		methods: {
+			serveis: function(){
+				this.c_serveis = "a_menuitem";
+				this.c_qui = "menuitem";
+				var div = document.getElementById('idServeis');
+				var menu = document.getElementById('linemenu');
+				//console.log(0);
+				window.scrollTo(0, window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
+			},
+			how: function(){
+				this.c_serveis = "menuitem";
+				this.c_qui = "a_menuitem";
+				//var div = document.getElementById('idServeis');
+				//var menu = document.getElementById('linemenu');
+				//console.log(window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
+				window.scrollTo(0, 0);//window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
+			}
+		}	
+	});
+	
+	window.onscroll = function() {
+		var scrollY = window.scrollY;
+		var div = document.getElementById('idServeis');
+		var menu = document.getElementById('linemenu');
+		if (scrollY < (window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom)){
+			vue.c_serveis = "menuitem";
+			vue.c_qui = "a_menuitem";
+		}
+		//var scrollY = window.scrollY;
+		//console.log(scrollY);
+	};
 
 </script>
 
