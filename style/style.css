@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+html{
+	font-family: 'Lato', sans-serif;
+}
+body{
+	margin: 0rem;
+}
+
 #title{
 	position: fixed;
 	left: 0.5rem;
@@ -6,7 +14,8 @@
 }
 
 .topnav{
-	position: fixed;
+    position: fixed;
+    height: 1.75rem;
     right: 0;
     top: 4rem;
     background-color: #4472c4;
@@ -26,9 +35,9 @@
 
 .linemenu{
     position: fixed;
-    height: 5px;
+    height: 0.5rem;
     background-color: #4472c4;
-    top: 6.5rem;
+    top: 6.75rem;
     left: 0;
     right: 0;
 }
@@ -62,6 +71,57 @@
 .item{
 	margin-right: 2rem;
 }
+#content {
+	padding-top: 7.5rem;
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+	flex-direction: column;
+}
+
+#qui{
+	position: relative;
+	display: flex;
+	grid-template-columns: auto auto;
+	justify-content: center;
+	align-content: center;
+}
+
+#logoqui{
+	max-width: 25rem;
+    margin: 0.3rem;
+}
+
+#textqui{
+	max-width: 45rem;
+    margin: 0.5rem;
+}
+
+strong{
+	font-size: 2.5rem;
+	color: #4472c4;
+}
+
+.linerel{
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    background-color: #4472c4;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
 
 @media all and (max-width: 1020px){
 		.item, .itemnone{
@@ -76,5 +136,19 @@
 		
 		.menuico{
 			display: inline;
+		}
+}
+
+@media all and (max-width: 450px){
+		#logoqui{
+			display: none;
+		}
+		
+		#qui{
+			position: relative;
+			display: flex;
+			grid-template-columns: auto;
+			justify-content: center;
+			align-content: center;
 		}
 }
