@@ -22,6 +22,15 @@ body{
 	width: 100%;
 }
 
+#bot{
+	position: fixed;
+	bottom: 0;
+	padding: 0;
+	margin: 0;
+	height: 0;
+	width: 100%;
+}
+
 .topnav{
     position: fixed;
     height: 1.75rem;
@@ -72,6 +81,11 @@ body{
 	height: 1rem;
 }
 
+#extra{
+	width: 100%;
+	padding: 0;
+}
+
 .itemnone, .item{
 	color: black;
 	text-decoration-line: none;
@@ -83,7 +97,6 @@ body{
 #content {
 	padding-top: 7.5rem;
 	width: 100%;
-	min-height: 100%;
 	z-index: -1;
 	position: absolute;
 	display: inline-flex;
@@ -133,6 +146,25 @@ strong{
     font-size: 1.5rem;
 }
 
+#titpsicosuper, #titlogosuper{
+	display: none;
+}
+
+#titpsico, #titlogo{
+	display: block;
+	margin: 0.5rem;
+	min-width: 12rem;
+}
+
+#titpsicosuper, #titlogosuper, #titlogo, #titpsico{
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+#titlogo, #titlogosuper{
+	color: #4472c4;
+}
+
 @media all and (max-width: 1020px){
 		.item, .itemnone{
 			display: none;
@@ -151,6 +183,15 @@ strong{
 
 @media all and (max-width: 450px){
 		#logoqui{
+			display: none;
+		}
+		
+		#titpsicosuper, #titlogosuper{
+			display: block;
+			margin: 0.5rem;
+		}
+		
+		#titpsico, #titlogo{
 			display: none;
 		}
 		

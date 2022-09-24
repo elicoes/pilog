@@ -22,7 +22,7 @@
 		<div class="topnav">
 		  <a :class="c_qui" v-on:click="how" href="#home">Qui som?</a>
 		  <a :class="c_serveis" v-on:click="serveis" href="#serveis">Serveis</a>
-		  <a class="menuitem" href="#equip">Equip</a>
+		  <a :class="c_equip" v-on:click="equip" href="#equip">Equip</a>
 		  <a class="menuitem" href="#tarifes">Tarifes</a>
 		  <a class="menuitem" href="#contacte">Contacte</a>
 		  <img class="menuico" src="./resources/pictures/menu.svg">
@@ -39,7 +39,41 @@
 			</div>
 			
 			<div id="idServeis" class="linerel"> Serveis </div>
+			<div id="titpsicosuper">
+				Servei de psicologia
+			</div>
 			<div id = "service">
+				<div id="titpsico">
+					Servei de psicologia
+				</div>
+				<ul id="textqui">
+					<li type="disc"><b>Trastorns de l’estat d’ànim:</b> Petita explicació del que tracta aquest servei en concret...</li>
+					<li type="disc"><b>Trastorns d’ansietat:</b> Petita explicació del que tracta aquest servei en concret...</li>
+					<li type="disc"><b>Teràpia del dolor:</b> Petita explicació del que tracta aquest servei en concret...</li>
+					<li type="disc"><b>Teràpia familiar:</b> Petita explicació del que tracta aquest servei en concret...</li>
+					<li type="disc"><b>Teràpia de dol:</b> Petita explicació del que tracta aquest servei en concret...</li>
+					<li type="disc"><b>Addiccions:</b> Petita explicació del que tracta aquest servei en concret...</li>
+				</ul>
+			</div>
+			<div id="titlogosuper">
+				Servei de logopèdia
+			</div>
+			<div id = "service">
+				<div id="titlogo">
+					Servei de logopèdia
+				</div>
+				<ul id="textqui">
+					<li type="disc"><b>Dificultats de lectoescriptura:</b> Petita explicació del que tracta aquest servei en concret...</li>
+					<li type="disc"><b>Alteracions del llenguatge:</b> Petita explicació del que tracta aquest servei en concret...</li>
+					<li type="disc"><b>Estimulació cognitiva:</b> Petita explicació del que tracta aquest servei en concret...</li>
+					<li type="disc"><b>Reeducació de la veu:</b> Petita explicació del que tracta aquest servei en concret...</li>
+					<li type="disc"><b>Teràpia miofuncional:</b> Petita explicació del que tracta aquest servei en concret...</li>
+				</ul>
+			</div>
+			
+			<div id="idEquip" class="linerel"> Equip </div>
+			
+			<div id = "qui">
 				<img id="logoqui" src="logo.svg">
 				<div id="textqui">
 					<p><strong>PiLog</strong> és un centre de Psicologia i Logopèdia situat al barri de Montilivi de Girona.</p>
@@ -47,16 +81,10 @@
 					<p>També oferim psicoteràpia mitjançant videotrucada a través de la pàgina de doctoralia per si no pots venir a consulta.</p>
 				</div>
 			</div>
-			<div id = "service">
-				<img id="logoqui" src="logo.svg">
-				<div id="textqui">
-					<p><strong>PiLog</strong> és un centre de Psicologia i Logopèdia situat al barri de Montilivi de Girona.</p>
-					<p>Proporcionem teràpia psicològica i logopèdica presencial, a la nostra consulta, mitjançant un tractament completament personalitzat.</p>
-					<p>També oferim psicoteràpia mitjançant videotrucada a través de la pàgina de doctoralia per si no pots venir a consulta.</p>
-				</div>
-			</div>
-			</div>
-		
+			
+			<div id="extra" v-bind:style="{ height: computedHeight }"></div>
+			<div id="bot"></div>
+		</div>
 	</div>
 </body>
 
@@ -73,42 +101,78 @@
 	var vue = new Vue({
 		el: '#page',
 		data: {
+			computedHeight: 0,
 			c_serveis: "menuitem",
-			c_qui: "a_menuitem"
+			c_qui: "a_menuitem",
+			c_equip: "menuitem"
 		},
 		created() {
-			
+			this.calculateHeight();
 		},
 		methods: {
-			serveis: function(){
-				this.c_serveis = "a_menuitem";
+			calculateHeight: function(){
+				console.log("resize");
+				var div = document.getElementById('extra');
+				var last = document.getElementById('idEquip');
+				var menu = document.getElementById('linemenu');
+				var bot = document.getElementById('bot');
+				var height = bot.getBoundingClientRect().bottom;
+				var queda = div.getBoundingClientRect().top - last.getBoundingClientRect().bottom;
+				var dif = height - queda - menu.getBoundingClientRect().bottom; 
+				if (dif > 0)
+					this.computedHeight = dif + "px";
+				else
+					this.computedHeight = "0px";
+			},
+			equip: function(){
+				var div = document.getElementById('idEquip');
+				var menu = document.getElementById('linemenu');
+				window.scrollTo(0, window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
+				this.c_serveis = "menuitem";
 				this.c_qui = "menuitem";
+				this.c_equip = "a_menuitem";
+			},
+			serveis: function(){
 				var div = document.getElementById('idServeis');
 				var menu = document.getElementById('linemenu');
-				//console.log(0);
 				window.scrollTo(0, window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
+				this.c_serveis = "a_menuitem";
+				this.c_qui = "menuitem";
+				this.c_equip = "menuitem";
 			},
 			how: function(){
+				window.scrollTo(0, 0);
 				this.c_serveis = "menuitem";
 				this.c_qui = "a_menuitem";
-				//var div = document.getElementById('idServeis');
-				//var menu = document.getElementById('linemenu');
-				//console.log(window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
-				window.scrollTo(0, 0);//window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
+				this.c_equip = "menuitem";
 			}
 		}	
 	});
 	
+	window.addEventListener('resize', function () {
+		vue.calculateHeight();
+	});
+	
 	window.onscroll = function() {
 		var scrollY = window.scrollY;
-		var div = document.getElementById('idServeis');
+		var divS = document.getElementById('idServeis');
+		var divE = document.getElementById('idEquip');
 		var menu = document.getElementById('linemenu');
-		if (scrollY < (window.scrollY + div.getBoundingClientRect().top - menu.getBoundingClientRect().bottom)){
+		if (scrollY < (window.scrollY + divS.getBoundingClientRect().top - menu.getBoundingClientRect().bottom)){
 			vue.c_serveis = "menuitem";
 			vue.c_qui = "a_menuitem";
+			vue.c_equip = "menuitem";
 		}
-		//var scrollY = window.scrollY;
-		//console.log(scrollY);
+		else if (scrollY < (window.scrollY + divE.getBoundingClientRect().top - menu.getBoundingClientRect().bottom)){
+			vue.c_serveis = "a_menuitem";
+			vue.c_equip = "menuitem";
+			vue.c_qui = "menuitem";
+		}
+		else {
+			vue.c_equip = "a_menuitem";
+			vue.c_serveis = "menuitem";
+			vue.c_qui = "menuitem";
+		}
 	};
 
 </script>
