@@ -104,7 +104,7 @@
 		var scrollY = window.scrollY;
 		var div = document.getElementById('idServeis');
 		var menu = document.getElementById('linemenu');
-		if (scrollY < (window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom)){
+		if (scrollY < (window.scrollY + div.getBoundingClientRect().top - menu.getBoundingClientRect().bottom)){
 			vue.c_serveis = "menuitem";
 			vue.c_qui = "a_menuitem";
 		}
