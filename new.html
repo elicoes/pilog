@@ -38,6 +38,7 @@
 		</div>
 		
 		<div id = "content">
+			<div id="idQui" class="linerel"> Qui som? </div>
 			<div id = "qui">
 				<img id="logoqui" src="logo.svg">
 				<div id="textqui">
@@ -203,7 +204,7 @@
 				var menu = document.getElementById('linemenu');
 				var bot = document.getElementById('bot');
 				var height = bot.getBoundingClientRect().bottom;
-				var queda = div.getBoundingClientRect().top - last.getBoundingClientRect().bottom;
+				var queda = div.getBoundingClientRect().top - last.getBoundingClientRect().top;
 				var dif = height - queda - menu.getBoundingClientRect().bottom; 
 				if (dif > 0)
 					this.computedHeight = dif + "px";
@@ -214,7 +215,7 @@
 				this.computedRight = "-11rem";
 				var div = document.getElementById('idContacte');
 				var menu = document.getElementById('linemenu');
-				window.scrollTo(0, window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
+				window.scrollTo(0, window.scrollY + div.getBoundingClientRect().top - menu.getBoundingClientRect().bottom+1);
 				this.c_serveis = "menuitem";
 				this.c_qui = "menuitem";
 				this.c_equip = "menuitem";
@@ -225,7 +226,7 @@
 				this.computedRight = "-11rem";
 				var div = document.getElementById('idTarifes');
 				var menu = document.getElementById('linemenu');
-				window.scrollTo(0, window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
+				window.scrollTo(0, window.scrollY + div.getBoundingClientRect().top - menu.getBoundingClientRect().bottom+1);
 				this.c_serveis = "menuitem";
 				this.c_qui = "menuitem";
 				this.c_equip = "menuitem";
@@ -236,7 +237,7 @@
 				this.computedRight = "-11rem";
 				var div = document.getElementById('idEquip');
 				var menu = document.getElementById('linemenu');
-				window.scrollTo(0, window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
+				window.scrollTo(0, window.scrollY + div.getBoundingClientRect().top - menu.getBoundingClientRect().bottom+1);
 				this.c_serveis = "menuitem";
 				this.c_qui = "menuitem";
 				this.c_equip = "a_menuitem";
@@ -247,7 +248,7 @@
 				this.computedRight = "-11rem";
 				var div = document.getElementById('idServeis');
 				var menu = document.getElementById('linemenu');
-				window.scrollTo(0, window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
+				window.scrollTo(0, window.scrollY + div.getBoundingClientRect().top - menu.getBoundingClientRect().bottom+1);
 				this.c_serveis = "a_menuitem";
 				this.c_qui = "menuitem";
 				this.c_equip = "menuitem";

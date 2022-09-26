@@ -121,7 +121,7 @@ body{
 	margin-right: 2rem;
 }
 #content {
-	padding-top: 7.5rem;
+	padding-top: 7.1rem;
 	width: 100%;
 	z-index: -1;
 	position: absolute;
@@ -290,6 +290,14 @@ strong{
 		
 		.menuicoc{
 			vertical-align: middle;
+		}
+		
+		#content {
+			padding-top: 7.5rem;
+		}
+		
+		#idQui{
+			display: none;
 		}
 }
 
