@@ -19,13 +19,22 @@
 			<a class="itemnone" href="mailto:pilog.girona@gmail.com">pilog.girona@gmail.com</a>
 		</div>
 		<div id="linemenu" class="linemenu"> </div>
+		
+		<div id="omenu" :style="{ right: computedRight }">
+			<a class="menumenu" v-on:click="how" href="#home">Qui som?</a>
+			<a class="menumenu" v-on:click="serveis" href="#serveis">Serveis</a>
+			<a class="menumenu" v-on:click="equip" href="#equip">Equip</a>
+			<a class="menumenu" href="#tarifes">Tarifes</a>
+			<a class="menumenu" href="#contacte">Contacte</a>
+		</div>
+		
 		<div class="topnav">
 		  <a :class="c_qui" v-on:click="how" href="#home">Qui som?</a>
 		  <a :class="c_serveis" v-on:click="serveis" href="#serveis">Serveis</a>
 		  <a :class="c_equip" v-on:click="equip" href="#equip">Equip</a>
 		  <a class="menuitem" href="#tarifes">Tarifes</a>
 		  <a class="menuitem" href="#contacte">Contacte</a>
-		  <img class="menuico" src="./resources/pictures/menu.svg">
+		  <a class="menuicoc" href="#menu" v-on:click="menu"><img class="menuico" src="./resources/pictures/menu.svg"></a>
 		</div>
 		
 		<div id = "content">
@@ -129,6 +138,8 @@
 		el: '#page',
 		data: {
 			computedHeight: 0,
+			computedRight: "-11rem",
+			openmenu: "open",
 			c_serveis: "menuitem",
 			c_qui: "a_menuitem",
 			c_equip: "menuitem"
@@ -152,6 +163,7 @@
 					this.computedHeight = "0px";
 			},
 			equip: function(){
+				this.computedRight = "-11rem";
 				var div = document.getElementById('idEquip');
 				var menu = document.getElementById('linemenu');
 				window.scrollTo(0, window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
@@ -160,6 +172,7 @@
 				this.c_equip = "a_menuitem";
 			},
 			serveis: function(){
+				this.computedRight = "-11rem";
 				var div = document.getElementById('idServeis');
 				var menu = document.getElementById('linemenu');
 				window.scrollTo(0, window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
@@ -168,10 +181,17 @@
 				this.c_equip = "menuitem";
 			},
 			how: function(){
+				this.computedRight = "-11rem";
 				window.scrollTo(0, 0);
 				this.c_serveis = "menuitem";
 				this.c_qui = "a_menuitem";
 				this.c_equip = "menuitem";
+			},
+			menu: function(){
+				if (this.computedRight == 0)
+					this.computedRight = "-11rem";
+				else
+					this.computedRight = 0;
 			}
 		}	
 	});
