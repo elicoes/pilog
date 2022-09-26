@@ -165,6 +165,33 @@ strong{
 	color: #4472c4;
 }
 
+#logopres, #psicopres{
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-top: 0.5rem;
+}
+
+#logopres{
+	color: #4472c4;
+}
+
+.profpicture{
+	max-height: 15rem;
+    margin: 0.5rem;
+}
+
+#apunt, #aputnguio{
+	width: 75%;
+	font-size: 0.9rem;
+	text-align: left;
+    margin-right: 5%;
+	font-style: italic;
+}
+
+#aputnguio{
+	margin-left: 15% !important;
+}
+
 @media all and (max-width: 1020px){
 		.item, .itemnone{
 			display: none;
@@ -182,7 +209,7 @@ strong{
 }
 
 @media all and (max-width: 450px){
-		#logoqui{
+		#logoqui, .profpicture{
 			display: none;
 		}
 		
