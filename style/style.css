@@ -261,6 +261,10 @@ strong{
 			grid-column: 1/3;
 			grid-row: 2;
 		}
+		
+		#idQui{
+			display: none;
+		}
 }
 
 @media all and (max-width: 740px){
@@ -294,10 +298,6 @@ strong{
 		
 		#content {
 			padding-top: 7.5rem;
-		}
-		
-		#idQui{
-			display: none;
 		}
 }
 
