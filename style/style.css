@@ -43,7 +43,7 @@ body{
 #omenu{
 	position: fixed;
 	right: -11rem;
-	transition: right 0.5s linear;
+	transition: right 0.05s linear;
 	top: 7.25rem;
 	width: 10rem;
     background-color: black;
