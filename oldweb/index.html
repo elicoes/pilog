@@ -1,0 +1,368 @@
+<!DOCTYPE html> 
+<html>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+	<link rel="stylesheet" href="./style/style.css?v=0.001">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	
+	<title>Clínica de Logopèdia i Psicologia PiLOG</title>
+	<meta name="description" content="Clínica que ofereix serveis de psicologia i logopèdia centrats en el benestar del pacient utilitzant una teràpia integrativa personalitzada.">
+</head>
+<body>
+	<div id="page">
+		<div id="top"></div>
+		<img id="title" src="./resources/pictures/logo_mini.svg">
+		<div class="resume">
+			<a href="https://www.google.com/maps?cid=1415433934649223619&authuser=3"><img class="ico" src="./resources/pictures/nav.svg"></a>
+			<a class="item" href="https://www.google.com/maps?cid=1415433934649223619&authuser=3">c\Andreu Tuyet Santamaria 29 Loc3, Girona (17003)</a>
+			<a href="tel:+34640574410"><img class="ico" src="./resources/pictures/phone.svg"></a>
+			<div class="item"><a id="menumobile" class="itemnone" href="tel:+34872509897">872509897</a> - <a class="itemnone" href="tel:+34640574410">640574410</a></div>
+			<a href="mailto:pilog.girona@gmail.com"><img class="ico" src="./resources/pictures/email.svg"></a>
+			<a class="itemnone" href="mailto:pilog.girona@gmail.com">pilog.girona@gmail.com</a>
+		</div>
+		<div id="linemenu" class="linemenu"> </div>
+		
+		<div id="omenu" :style="{ right: computedRight }">
+			<a class="menumenu" v-on:click="how" href="#home">Qui som?</a>
+			<a class="menumenu" v-on:click="serveis" href="#serveis">Serveis</a>
+			<a class="menumenu" v-on:click="equip" href="#equip">Equip</a>
+			<a class="menumenu" v-on:click="tarifes" href="#tarifes">Tarifes</a>
+			<a class="menumenu" v-on:click="contacte" href="#contact">Reservar cita</a>
+		</div>
+		
+		<div class="topnav">
+		  <a :class="c_qui" v-on:click="how" href="#home">Qui som?</a>
+		  <a :class="c_serveis" v-on:click="serveis" href="#serveis">Serveis</a>
+		  <a :class="c_equip" v-on:click="equip" href="#equip">Equip</a>
+		  <a :class="c_tarifes" v-on:click="tarifes" href="#tarifes">Tarifes</a>
+		  <a :class="c_contacte" v-on:click="contacte" href="#contact">Reservar cita</a>
+		  <a class="menuicoc" href="#menu" v-on:click="menu"><img class="menuico" src="./resources/pictures/menu.svg"></a>
+		</div>
+		
+		<div id = "content">
+			<div id="idQui" class="linerel"> Qui som? </div>
+			<div id = "qui">
+				<img id="logoqui" src="logo.svg">
+				<div id="textqui">
+					<p><strong>PiLog</strong> és un centre de Psicologia i Logopèdia situat al barri de Montilivi de Girona.</p>
+					<p>Proporcionem teràpia psicològica i logopèdica presencial, a la nostra consulta, mitjançant un tractament completament personalitzat.</p>
+					<p>També oferim psicoteràpia mitjançant videotrucada a través de la pàgina de doctoralia per si no pots venir a consulta.</p>
+				</div>
+			</div>
+			
+			<div id="idServeis" class="linerel"> Serveis </div>
+			<div id="titpsicosuper">
+				Servei de psicologia
+			</div>
+			<div id = "service">
+				<div id="titpsico">
+					Servei de psicologia
+				</div>
+				<ul id="textqui">
+					<li type="disc"><b>Trastorns de l’estat d’ànim:</b> Es caracterizen per la presència d’alteracions emocionals, consistents en períodes prologants de tristesa, exaltació i/o eufòria.</li>
+					<li type="disc"><b>Trastorns d’ansietat:</b> Es caracteritza per la presencia de preocupacions i pors intenses, excessives, i persistents sobre situacions diàries.</li>
+					<li type="disc"><b>Teràpia del dolor crònic:</b> Es centra d’un tractament a nivell fisiològic, cognitiu, afectiu i conductual en el qual s’ensenya al pacient a utilitzar diferents tècniques de control i acceptació del dolor, així com també a la modificació de conductes que incrementen el dolor, per tal d’incrementar les activitats agradables. Així doncs, es procura normalitzar la vida de la persona que sent dolor per tal que recuperi de nou l’equilibri amb ell mateix i amb el seu entorn personal, familiar i laboral.</li>
+					<li type="disc"><b>Teràpia de parella:</b> Es tracta d’un tipus de teràpia que té com a objectiu analitzar i tractar els conflictes surgits en una relació amorosa. Sabem que els canvis personals com externs afecten a la convivència de la parella i les parelles s’han d’anar adaptatns els canvis. Per això, a través de la teràpia de parella s’intenta proporcionar diferents recursos per aconseguir manejar les diferents situacions i procurar resoldre els conflictes.</li>
+					<li type="disc"><b>Teràpia de dol i pèrdues:</b> L’objectiu es ajudar a la persona a superar la mort d’un ésser estimat o la desaparició d’algún element de la seva vida pel qual la persona sentia un fort aferrament.</li>
+					<li type="disc"><b>Addiccions:</b> Té com a finalitat ajudar al pacient a entendre el seu comportament i emocions posant especial atenció a l’arrel del problema; es treballa el control d’impulsos, presa de decisions i els problemes personals propis de la persona.</li>
+					<li type="disc"><b>Teràpia infant-juvenil:</b> Es tracta de donar eines per a millorar la gestió emocional i conductual dels menors. Poden tractar-se de sessions on es treballi directament amb les famílies o bé individualment, segons l’edat i les necessitats del nen o nena.</li>
+					<li type="disc"><b>Teràpia familiar (relacions matern/patern filials):</b> La creació de vincles sans en el període de criança dels fills i filles, garanteixen un apropiat desenvolupament; les relacions matern/patern filials estableixen les bases de qui seran i com s’interrelacionaran amb el món i la resta de persones que ens envolten.</li>
+					<li type="disc"><b>Psicopedagogia:</b> Es basa en identificar i afrontar les diferents problemàtiques i dificultats que influeixen en l’aprenentatge, tenint en compte les àrees cognitives, socioafectives, lectoescriptores i càlcul.</li>
+					<li type="disc"><b>Orientació educativa i laboral:</b> Permet guiar les accions en funció de la personalitat de l’individu, tractant aspectes del desenvolupament i en correspondència amb les seves necessitats i interessos.</li>
+					<li type="disc"><b>Estimulació cognitiva:</b> Conjunt de tècniques enfocades a millorar el funcionament de la memòria, l'orientació, l'atenció, el llenguatge i les funcions executives.</li>
+				</ul>
+			</div>
+			<div id="titlogosuper">
+				Servei de logopèdia
+			</div>
+			<div id = "service">
+				<div id="titlogo">
+					Servei de logopèdia
+				</div>
+				<ul id="textqui">
+					<li type="disc"><b>Dificultats de lectoescriptura:</b> hi són presents quan l’aprenentatge de la lectura o de l’escriptura no té l’evolució esperada segons l’edat. Aquest fet pot comportar retards a l’aprenentatge de les diferents àrees o aptituds acadèmiques bàsiques que es porten a terme durant el període de desenvolupament, que coincideix amb l’etapa escolar. </li>
+					<li type="disc"><b>Alteracions del llenguatge oral (expressiu i receptiu):</b> són alteracions que dificulten la comunicació oral tant per a parlar (expressiu) com per a entendre el que diuen altres persones (receptiu). </li>
+					<ul>
+						<li><b>Trastorn del llenguatge expressiu:</b> no començar a parlar fins als dos anys o tenir dificultats per explicar diferents esdeveniments. </li>
+						<li><b>Trastorns del llenguatge receptiu:</b> dificultats per a seguir instruccions senzilles o per organitzar la informació que ha sentit.</li>
+					</ul>
+					<li type="disc"><b>Alteracions de la fluïdesa verbal o disfèmia:</b> es caracteritza pel fet que el subjecte sap exactament el que ha de dir, però és incapaç de dir-ho amb fluïdesa davant la presència d’alteracions en l’articulació i ritme de la parla, bloquejos, repeticions i prolongacions de síl·labes i paraules de manera involuntària. </li>
+					<li type="disc"><b>Reeducació de la veu:</b> es tracta d’un aprenentatge vocal i corporal per tal de millorar la funció de la laringe (caixa de la veu) quan aquesta es troba afectada amb l’objectiu d’aconseguir o satisfer les necessitats ocupacionals, emocionals i socials.</li>
+					<li type="disc"><b>Teràpia miofuncional:</b> té com a objectiu aconseguir la normalització i l’equilibri múscul-esquelètic que contribueixi i/o afavoreixi a una adequada funcionalitat dels processos de la parla, deglució, fonació i respiració. Es treballa a partir de la reeducació de la musculatura facial, patró respiratori i l’eliminació de mals hàbits, possibilitant un desenvolupament i creixement anatòmic normalitzat. </li>
+				</ul>
+			</div>
+			
+			<div id="idEquip" class="linerel"> Equip </div>
+			
+			<div id = "qui">
+				<img class="profpicture" src="logop.png">
+				<div id="textqui">
+					<p id = "logopres">Logopeda</p>
+					<p><b>Elisabet Conill Espona</b></p>
+					<p><i>Col·legiada nº08-4445</i></p>
+					<ul id="textqui">
+						<li type="disc">Graduada en Logopèdia</li>
+						<li type="disc">Experiència en nens amb dificultats en el desenvolupament del llenguatge, parla i aprenentatge</li>
+						<li type="disc">Experiència en teràpies de veu.</li>
+						<li type="disc">Postgraus en deglució, veu i trastorns del llenguatge oral.</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id = "qui">
+				<div id="textqui">
+					<p id = "psicopres">Psicòloga</p>
+					<p><b>Magalí Bofí Cortada</b></p>
+					<p><i>Col·legiada nº30225</i></p>
+					<ul id="textqui">
+						<li type="disc">Especialitzada en psicologia d’adults i de la tercera edat mitjançant una teràpia integrativa*.</li>
+						<li type="disc">Graduada en Psicologia per la UB</li>
+						<li type="disc">Professional amb experiència i constant formació.</li>
+						<li type="disc">Màster en Teràpia Cognitiva Social.</li>
+						<li type="disc">Màster en Psicologia General Sanitària.</li>
+						<li type="disc">Postgraus en psicoteràpia i anàlisis de processos terapèutics.</li>
+					</ul>
+					<p id="apunt"> *Què és la teràpia integrativa?  </p>                              
+					<p id="aputnguio">- Es la teràpia que unifica diferents plans del funcionament de l’individu i persegueix una actitud oberta sense la interferència de prejudicis i les etiquetes diagnòstiques.</p>
+					<p id="aputnguio">- En aquesta etapa es contempla el sistema cognitiu, conductual, emocional i fisiològic combinats amb el desenvolupament psicosocial de la persona.</p>
+					<p id="aputnguio">- L’objectiu d’aquesta teràpia està destinada a aconseguir la plenitud personal i un funcionament complet en els àmbits social, psíquic i intrapersonal de la persona. </p>
+
+				</div>
+				<img class="profpicture" src="psicop.png">
+			</div>
+			
+			<div id = "qui">
+				<img class="profpicture" src="psicopInf.png">
+				<div id="textqui">
+					<p id = "psicopres">Psicòloga</p>
+					<p><b>Isabel Mellado Fernández</b></p>
+					<p><i>Col·legiada nº25312</i></p>
+					<ul id="textqui">
+						<li type="disc">Grau en Psicologia i màster en psicologia general sanitaria a la UDG</li>
+						<li type="disc">Experiència i formació en psicologia d'adults i intantil-juvenil a través de teràpia cognitiva-conductual.</li>
+						<li type="disc">Experta en prevenció de conductes lesives autoinfligides.</li>
+						<li type="disc">Expecialista en intervenció de malalties mentals greus.</li>
+						<li type="disc">Experta en intervenció ens Trastorns de l'Espectre Autista (TEA).</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="idTarifes" class="linerel"> Tarifes </div>
+			
+			<div id = "qui">
+				<div>
+					<p id = "psicopres" class="blackcenter">Psicologia</p>
+					<p class="blackcenter">1 hora <b>50€</b></p>
+					<p class="blackcenter">*Teràpia de parella i familiar <b>60€</b></p>
+					<p id="logopres" class="bluecenter">Logopèdia</p>
+					<p class="bluecenter">30 minuts <b>25€</b></p>
+				</div>
+			</div>
+			
+			<div id="idContacte" class="linerel"> Reservar cita </div>
+			
+			<div id = "contacte">
+				<div>
+					<p id = "psicopres">Per reservar cita:</p>
+					<a class="zl-facility-url" href="https://www.doctoralia.es/clinicas/centre-de-logopedia-i-psicologia-pilog" rel="nofollow" data-zlw-facility="centre-de-logopedia-i-psicologia-pilog" data-zlw-type="facility-big" data-zlw-saas-only="false">Centre de Logopèdia i Psicologia PiLog</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>
+				</div>
+				<div>
+					<p id = "psicopres">Ens podeu trobar a:</p>
+					<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.28723627034!2d2.8257648156838022!3d41.972642367470876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bae746c1f77465%3A0x13a4a1aa0dcce9c3!2sCentre%20de%20Logop%C3%A8dia%20i%20Psicologia%20PiLOG!5e0!3m2!1ses!2ses!4v1664219909950!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div id= "othecontact">
+					<p id = "psicopres">Altres vies de contacte:</p>
+					<div class="resumecontact">
+						<a href="tel:+34640574410"><img class="ico" src="./resources/pictures/phone.svg"></a>
+						<div class="itemyes"><a class="itemyes" href="tel:+34872509897">872509897</a></div>
+						
+						<a href="tel:+34640574410"><img class="ico" src="./resources/pictures/phone.svg"></a>
+						<div class="itemyes"><a class="itemyes" href="tel:+34640574410"><a class="itemyes" href="tel:+34640574410">640574410</a></div>
+
+						<a href="https://wa.me/34640574410/"><img class="ico" src="./resources/pictures/whatsapp.svg"></a>
+						<div class="itemyes"><a class="itemyes" href="https://wa.me/34640574410/">640574410</a></div>
+
+						
+						<a href="mailto:pilog.girona@gmail.com"><img class="ico" src="./resources/pictures/email.svg"></a>
+						<a class="itemyes" href="mailto:pilog.girona@gmail.com">pilog.girona@gmail.com</a>
+						
+						
+					</div>
+				</div>
+			</div>
+			
+			
+			<div id="extra" v-bind:style="{ height: computedHeight }"></div>
+			<div id="bot"></div>
+		</div>
+	</div>
+</body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-213586676-1">
+</script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-213586676-1');
+	
+	var vue = new Vue({
+		el: '#page',
+		data: {
+			computedHeight: 0,
+			computedRight: "-11rem",
+			openmenu: "open",
+			c_serveis: "menuitem",
+			c_qui: "a_menuitem",
+			c_equip: "menuitem",
+			c_tarifes: "menuitem",
+			c_contacte: "menuitem"
+		},
+		created() {
+			this.calculateHeight();
+		},
+		methods: {
+			calculateHeight: function(){
+				var menumobile = document.getElementById('menumobile');
+				var div = document.getElementById('extra');
+				var last = document.getElementById('idContacte');
+				var menu = document.getElementById('linemenu');
+				var bot = document.getElementById('bot');
+				var height = bot.getBoundingClientRect().bottom;
+				var queda = (window.getComputedStyle(menumobile).display !== "none")?(div.getBoundingClientRect().top - last.getBoundingClientRect().top):(div.getBoundingClientRect().top - last.getBoundingClientRect().bottom);
+				var dif = height - queda - menu.getBoundingClientRect().bottom; 
+				if (dif > 0)
+					this.computedHeight = dif + 1 + "px";
+				else
+					this.computedHeight = "0px";
+			},
+			contacte:  function(){
+				var menumobile = document.getElementById('menumobile');
+				this.computedRight = "-11rem";
+				var div = document.getElementById('idContacte');
+				var menu = document.getElementById('linemenu');
+				if (window.getComputedStyle(menumobile).display !== "none")
+					window.scrollTo(0, window.scrollY + div.getBoundingClientRect().top - menu.getBoundingClientRect().bottom+1);
+				else
+					window.scrollTo(0, window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
+				this.c_serveis = "menuitem";
+				this.c_qui = "menuitem";
+				this.c_equip = "menuitem";
+				this.c_tarifes = "menuitem";
+				this.c_contacte = "a_menuitem";
+			},
+			tarifes:  function(){
+				var menumobile = document.getElementById('menumobile');
+				this.computedRight = "-11rem";
+				var div = document.getElementById('idTarifes');
+				var menu = document.getElementById('linemenu');
+				if (window.getComputedStyle(menumobile).display !== "none")
+					window.scrollTo(0, window.scrollY + div.getBoundingClientRect().top - menu.getBoundingClientRect().bottom+1);
+				else
+					window.scrollTo(0, window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
+				this.c_serveis = "menuitem";
+				this.c_qui = "menuitem";
+				this.c_equip = "menuitem";
+				this.c_tarifes = "a_menuitem";
+				this.c_contacte = "menuitem";
+			},
+			equip: function(){
+				var menumobile = document.getElementById('menumobile');
+				this.computedRight = "-11rem";
+				var div = document.getElementById('idEquip');
+				var menu = document.getElementById('linemenu');
+				if (window.getComputedStyle(menumobile).display !== "none")
+					window.scrollTo(0, window.scrollY + div.getBoundingClientRect().top - menu.getBoundingClientRect().bottom+1);
+				else
+					window.scrollTo(0, window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
+				this.c_serveis = "menuitem";
+				this.c_qui = "menuitem";
+				this.c_equip = "a_menuitem";
+				this.c_tarifes = "menuitem";
+				this.c_contacte = "menuitem";
+			},
+			serveis: function(){
+				var menumobile = document.getElementById('menumobile');
+				this.computedRight = "-11rem";
+				var div = document.getElementById('idServeis');
+				var menu = document.getElementById('linemenu');
+				if (window.getComputedStyle(menumobile).display !== "none")
+					window.scrollTo(0, window.scrollY + div.getBoundingClientRect().top - menu.getBoundingClientRect().bottom+1);
+				else
+					window.scrollTo(0, window.scrollY + div.getBoundingClientRect().bottom - menu.getBoundingClientRect().bottom);
+				this.c_serveis = "a_menuitem";
+				this.c_qui = "menuitem";
+				this.c_equip = "menuitem";
+				this.c_tarifes = "menuitem";
+				this.c_contacte = "menuitem";
+			},
+			how: function(){
+				this.computedRight = "-11rem";
+				window.scrollTo(0, 0);
+				this.c_serveis = "menuitem";
+				this.c_qui = "a_menuitem";
+				this.c_equip = "menuitem";
+				this.c_tarifes = "menuitem";
+				this.c_contacte = "menuitem";
+			},
+			menu: function(){
+				if (this.computedRight == 0)
+					this.computedRight = "-11rem";
+				else
+					this.computedRight = 0;
+			}
+		}	
+	});
+	
+	window.addEventListener('resize', function () {
+		vue.calculateHeight();
+	});
+	
+	window.onscroll = function() {
+		var scrollY = window.scrollY;
+		var divC = document.getElementById('idContacte');
+		var divT = document.getElementById('idTarifes');
+		var divS = document.getElementById('idServeis');
+		var divE = document.getElementById('idEquip');
+		var menu = document.getElementById('linemenu');
+		if (scrollY < (window.scrollY + divS.getBoundingClientRect().top - menu.getBoundingClientRect().bottom -2)){
+			vue.c_serveis = "menuitem";
+			vue.c_qui = "a_menuitem";
+			vue.c_equip = "menuitem";
+			vue.c_tarifes = "menuitem";
+			vue.c_contacte = "menuitem";
+		}
+		else if (scrollY < (window.scrollY + divE.getBoundingClientRect().top - menu.getBoundingClientRect().bottom -2)){
+			vue.c_serveis = "a_menuitem";
+			vue.c_equip = "menuitem";
+			vue.c_qui = "menuitem";
+			vue.c_tarifes = "menuitem";
+			vue.c_contacte = "menuitem";
+		}
+		else if (scrollY < (window.scrollY + divT.getBoundingClientRect().top - menu.getBoundingClientRect().bottom -2)){
+			vue.c_serveis = "menuitem";
+			vue.c_equip = "a_menuitem";
+			vue.c_qui = "menuitem";
+			vue.c_tarifes = "menuitem";
+			vue.c_contacte = "menuitem";
+		}
+		else if (scrollY < (window.scrollY + divC.getBoundingClientRect().top - menu.getBoundingClientRect().bottom -2)){
+			vue.c_serveis = "menuitem";
+			vue.c_equip = "menuitem";
+			vue.c_qui = "menuitem";
+			vue.c_tarifes = "a_menuitem";
+			vue.c_contacte = "menuitem";
+		}
+		else {
+			vue.c_equip = "menuitem";
+			vue.c_serveis = "menuitem";
+			vue.c_qui = "menuitem";
+			vue.c_tarifes = "menuitem";
+			vue.c_contacte = "a_menuitem";
+		}
+	};
+
+</script>
+
+</html>

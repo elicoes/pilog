@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="136.37407mm"
-   height="44.242439mm"
-   viewBox="0 0 136.37407 44.242439"
+   width="115mm"
+   height="95mm"
+   viewBox="0 0 115 95"
    version="1.1"
    id="svg988"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
@@ -28,8 +28,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.74118967"
-     inkscape:cx="398.68338"
-     inkscape:cy="328.5259"
+     inkscape:cx="407.45306"
+     inkscape:cy="427.0162"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -39,8 +39,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid1807"
-       originx="-2.6438973"
-       originy="-24.983261" />
+       originx="-0.29375497"
+       originy="0.93730981" />
   </sodipodi:namedview>
   <defs
      id="defs985" />
@@ -48,10 +48,17 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-63.372543,-61.896756)">
+     transform="translate(-61.022401,-35.976186)">
+    <rect
+       style="fill:#ffffff;stroke-width:0.478146"
+       id="rect1831"
+       width="115"
+       height="95"
+       x="61.0224"
+       y="35.976185" />
     <g
        aria-label="PiLog"
-       transform="matrix(0.97326404,0,0,1.0274704,-19.929946,67.955377)"
+       transform="matrix(0.97326404,0,0,1.0274704,-52.771292,89.730618)"
        id="text5169-8-92-1-4"
        style="font-size:21.2361px;line-height:1.25;letter-spacing:0px;word-spacing:0px;fill:#00d3ff;stroke-width:0.530902">
       <g
@@ -80,7 +87,7 @@
     </g>
     <g
        id="g1805"
-       transform="translate(-77.001673,-111.60221)">
+       transform="translate(-38.091817,-125.88106)">
       <path
          sodipodi:nodetypes="cccczcczczzccc"
          inkscape:connector-curvature="0"
