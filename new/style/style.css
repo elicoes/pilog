@@ -57,7 +57,7 @@ body{
 	padding: 0;
 	margin: 0;
 	height: 3.5rem;
-	background-color: #45C4C4;
+	background-color: white;
 	width: 100%;
 }
 
@@ -80,7 +80,7 @@ body{
 }
 
 
-.itemnone, .item {
+.itemnone, .item, .itemyes {
 	color: #42453B;
 	text-decoration-line: none;
 }
@@ -101,7 +101,7 @@ body{
 #title{
 	height: 2.8rem;
     position: fixed;
-    top: 3.3rem;
+    top: 2.7rem;
     left: 0.5rem;
     z-index: 2;
 }
@@ -305,6 +305,22 @@ hr{
     -webkit-text-stroke-color: #0064ff;
 }
 
+#contacte{
+	position: relative;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	align-content: center;
+}
+
+.resumecontact {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+
 @media all and (max-width: 670px){	
 	.menuico{
 		display: inline;
@@ -315,6 +331,15 @@ hr{
 @media all and (max-width: 1020px){
 	.item, .itemnone{
 		display: none;
+	}
+
+	#contacte{
+		grid-template-columns: auto auto;
+	}
+	
+	#othecontact {
+		grid-column: 1/3;
+		grid-row: 2;
 	}
 }
 
@@ -358,4 +383,20 @@ hr{
 li{
 	margin-bottom: 1rem;
 	margin-right: 1rem;
+}
+
+#map{
+	max-width: calc(100% - 1rem);
+	padding: 0.5rem;
+}
+
+@media all and (max-width: 740px){
+	#othecontact {
+		grid-column: auto;
+		grid-row: auto;
+	}
+	
+	#contacte{
+		grid-template-columns: auto;
+	}
 }
